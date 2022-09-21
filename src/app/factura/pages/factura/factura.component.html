@@ -118,6 +118,19 @@
               </div>
             </div>
             <button type="button" class="btn btn-primary btn-sm" (click)="guardarVenta()">Guardar Venta</button>
+            <div *ngIf="imprimirB">
+              <p></p>
+              <div class="fade show form-control-border" role="alert">
+                <div class="row">
+                  <div class="col-6">
+                    <button type="button" class="btn btn-primary btn-sm" (click)="imprimirt()">Imprimir en  Etiquetadora</button>
+                  </div>
+                  <div class="col-6">
+                    <button type="button" class="btn btn-primary btn-sm" (click)="imprimirt()">Imprimir en  Carta</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

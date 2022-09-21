@@ -1,0 +1,1497 @@
+{
+  "puntoventas": [
+    {
+      "id": 1,
+      "noPVenta": 1,
+      "idsucursal": 1,
+      "punto venta": "ITSA-HUACARETA"
+    },
+    {
+      "id": 2,
+      "noPVenta": 1,
+      "idsucursal": 2,
+      "punto venta": "CASTILLO DE LA GLORIETA"
+    },
+    {
+      "id": 3,
+      "noPVenta": 2,
+      "idsucursal": 2,
+      "punto venta": "CENTRO INTERNACIONAL DE CONVENCIONES – CICC"
+    },
+    {
+      "id": 4,
+      "noPVenta": 1,
+      "idsucursal": 3,
+      "punto venta": "TIENDA CETUR"
+    },
+    {
+      "id": 5,
+      "noPVenta": 2,
+      "idsucursal": 3,
+      "punto venta": "MUSEO CETUR"
+    },
+    {
+      "id": 6,
+      "noPVenta": 1,
+      "idsucursal": 4,
+      "punto venta": "DESARROLLO PRODUCTIVO"
+    },
+    {
+      "id": 7,
+      "noPVenta": 2,
+      "idsucursal": 4,
+      "punto venta": "PARQUELO LA MADONA"
+    },
+    {
+      "id": 8,
+      "noPVenta": 3,
+      "idsucursal": 4,
+      "punto venta": "UNIDAD DE TRANSPORTE"
+    },
+    {
+      "id": 9,
+      "noPVenta": 4,
+      "idsucursal": 4,
+      "punto venta": "DIRECCION DE MINERIA"
+    },
+    {
+      "id": 10,
+      "noPVenta": 1,
+      "idsucursal": 5,
+      "punto venta": "DEPORTES"
+    }
+  ],
+  "sucursales": [
+    {
+      "id": 1,
+      "nosucursal": 0,
+      "sucursal": "CASA MATRIZ"
+    },
+    {
+      "id": 2,
+      "nosucursal": 1,
+      "sucursal": "LA GLORIETA"
+    },
+    {
+      "id": 3,
+      "nosucursal": 2,
+      "sucursal": "SAN ALBERTO"
+    },
+    {
+      "id": 4,
+      "nosucursal": 3,
+      "sucursal": "PASAJE GANDARILLAS"
+    },
+    {
+      "id": 5,
+      "nosucursal": 4,
+      "sucursal": "SEDEDE"
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "producto": "HORTALIZAS ( ARVEJAS)",
+      "idunidad": 27,
+      "preciou": 30,
+      "idsucursal": 1,
+      "idpventa": 1
+    },
+    {
+      "id": 2,
+      "producto": "HORTALIZAS ( BROCOLI)",
+      "idunidad": 32,
+      "preciou": 0.4,
+      "idsucursal": 1,
+      "idpventa": 1
+    },
+    {
+      "id": 3,
+      "producto": "HORTALIZAS ( REMOLACHA)",
+      "idunidad": 50,
+      "preciou": 92,
+      "idsucursal": 1,
+      "idpventa": 1
+    },
+    {
+      "id": 4,
+      "producto": "HORTALIZAS ( ZANAHORIA)",
+      "idunidad": 50,
+      "preciou": 92,
+      "idsucursal": 1,
+      "idpventa": 1
+    },
+    {
+      "id": 5,
+      "producto": "HORTALIZAS (LECHUGAS)",
+      "idunidad": 32,
+      "preciou": 0.4,
+      "idsucursal": 1,
+      "idpventa": 1
+    },
+    {
+      "id": 6,
+      "producto": "LECHE DE VACA (LECHE DE VACA PURA)",
+      "idunidad": 48,
+      "preciou": 3.5,
+      "idsucursal": 1,
+      "idpventa": 1
+    },
+    {
+      "id": 7,
+      "producto": "MIEL ( MIEL DE ABEJA)",
+      "idunidad": 42,
+      "preciou": 26,
+      "idsucursal": 1,
+      "idpventa": 1
+    },
+    {
+      "id": 8,
+      "producto": "NARANJA ( NARANJA DE MESA)",
+      "idunidad": 3,
+      "preciou": 18,
+      "idsucursal": 1,
+      "idpventa": 1
+    },
+    {
+      "id": 9,
+      "producto": "PORCINO( CATEGORIA LECHON PROMEDIO DE 20 KILOS PESO VIVO, EN UNA CANTIDAD DE 25 CABEZAS POR SEMESTRE)",
+      "idunidad": 42,
+      "preciou": 7,
+      "idsucursal": 1,
+      "idpventa": 1
+    },
+    {
+      "id": 10,
+      "producto": "TERNERO MACHO",
+      "idunidad": 31,
+      "preciou": 650,
+      "idsucursal": 1,
+      "idpventa": 1
+    },
+    {
+      "id": 11,
+      "producto": "TORO DE 3 AÑOS (TORETE DE 2 a 3 AÑOS)",
+      "idunidad": 31,
+      "preciou": 6500,
+      "idsucursal": 1,
+      "idpventa": 1
+    },
+    {
+      "id": 12,
+      "producto": "VACA ( VAQUILLA)",
+      "idunidad": 31,
+      "preciou": 1300,
+      "idsucursal": 1,
+      "idpventa": 1
+    },
+    {
+      "id": 13,
+      "producto": "VENTA DE LICOR DE NARANJA Y MANDARINA",
+      "idunidad": 48,
+      "preciou": 20,
+      "idsucursal": 1,
+      "idpventa": 1
+    },
+    {
+      "id": 14,
+      "producto": "VENTA DE NUCLEO DE ABEJAS",
+      "idunidad": 34,
+      "preciou": 300,
+      "idsucursal": 1,
+      "idpventa": 1
+    },
+    {
+      "id": 15,
+      "producto": "VENTA DE QUESO",
+      "idunidad": 42,
+      "preciou": 24,
+      "idsucursal": 1,
+      "idpventa": 1
+    },
+    {
+      "id": 16,
+      "producto": "VENTA DE YOGURT",
+      "idunidad": 48,
+      "preciou": 9,
+      "idsucursal": 1,
+      "idpventa": 1
+    },
+    {
+      "id": 17,
+      "producto": "EXTRANJEROS",
+      "idunidad": 28,
+      "preciou": 20,
+      "idsucursal": 2,
+      "idpventa": 2
+    },
+    {
+      "id": 18,
+      "producto": "NACIONALES Y CAMARA",
+      "idunidad": 28,
+      "preciou": 10,
+      "idsucursal": 2,
+      "idpventa": 2
+    },
+    {
+      "id": 19,
+      "producto": "NIÑOS ",
+      "idunidad": 28,
+      "preciou": 5,
+      "idsucursal": 2,
+      "idpventa": 2
+    },
+    {
+      "id": 20,
+      "producto": "AMBIENTE PARA ACREDITACION",
+      "idunidad": 22,
+      "preciou": 500,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 21,
+      "producto": "AULA ",
+      "idunidad": 22,
+      "preciou": 1000,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 22,
+      "producto": "COCINA A",
+      "idunidad": 22,
+      "preciou": 1000,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 23,
+      "producto": "COCINA B",
+      "idunidad": 22,
+      "preciou": 1000,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 24,
+      "producto": "COMPUTADORA PORTATIL",
+      "idunidad": 54,
+      "preciou": 400,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 25,
+      "producto": "CUCHARILLAS",
+      "idunidad": 37,
+      "preciou": 10,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 26,
+      "producto": "CUCHILLOS",
+      "idunidad": 37,
+      "preciou": 10,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 27,
+      "producto": "DATA DISPLAY",
+      "idunidad": 54,
+      "preciou": 480,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 28,
+      "producto": "ECRAN",
+      "idunidad": 54,
+      "preciou": 100,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 29,
+      "producto": "FALDONES",
+      "idunidad": 55,
+      "preciou": 70,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 30,
+      "producto": "IMPRESORA",
+      "idunidad": 54,
+      "preciou": 840,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 31,
+      "producto": "MANTELES",
+      "idunidad": 54,
+      "preciou": 5,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 32,
+      "producto": "MICROFONOS",
+      "idunidad": 54,
+      "preciou": 320,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 33,
+      "producto": "PLATILLOS",
+      "idunidad": 37,
+      "preciou": 10,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 34,
+      "producto": "PLATOS",
+      "idunidad": 37,
+      "preciou": 60,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 35,
+      "producto": "SALA DE CONFERENCIA",
+      "idunidad": 22,
+      "preciou": 500,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 36,
+      "producto": "SALA DE REUNIONES INDEPENDIENTES",
+      "idunidad": 22,
+      "preciou": 500,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 37,
+      "producto": "SALA PARA ADMINISTRACION",
+      "idunidad": 22,
+      "preciou": 500,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 38,
+      "producto": "SALA PARA SENADORES ",
+      "idunidad": 22,
+      "preciou": 4000,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 39,
+      "producto": "SALA PEQUEÑA DE REUNIONES BS ",
+      "idunidad": 22,
+      "preciou": 500,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 40,
+      "producto": "SALON \"B\" ",
+      "idunidad": 22,
+      "preciou": 8000,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 41,
+      "producto": "SALON A Y B COSTO POR CADA DIVISION",
+      "idunidad": 22,
+      "preciou": 2000,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 42,
+      "producto": "SALON A Y B COSTO POR DOS (2) DIVISIONES",
+      "idunidad": 22,
+      "preciou": 4000,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 43,
+      "producto": "SALON A Y B COSTO POR TRES (3) DIVISIONES",
+      "idunidad": 22,
+      "preciou": 6000,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 44,
+      "producto": "SALON PARA DIPUTADOS ",
+      "idunidad": 22,
+      "preciou": 5000,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 45,
+      "producto": "SALON PARA OFICINA",
+      "idunidad": 22,
+      "preciou": 500,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 46,
+      "producto": "SALON PLENARIO",
+      "idunidad": 22,
+      "preciou": 8000,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 47,
+      "producto": "SALON\" A \"",
+      "idunidad": 22,
+      "preciou": 8000,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 48,
+      "producto": "TENEDORES",
+      "idunidad": 37,
+      "preciou": 10,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 49,
+      "producto": "TENEDORES POSTREROS",
+      "idunidad": 37,
+      "preciou": 8,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 50,
+      "producto": "VASOS",
+      "idunidad": 37,
+      "preciou": 8,
+      "idsucursal": 2,
+      "idpventa": 3
+    },
+    {
+      "id": 51,
+      "producto": "AQSU DE PARED ",
+      "idunidad": 21,
+      "preciou": 780,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 52,
+      "producto": "Aretes ",
+      "idunidad": 44,
+      "preciou": 15,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 53,
+      "producto": "Aretes de la cultura Yampara",
+      "idunidad": 36,
+      "preciou": 12,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 54,
+      "producto": "ARETES TEJIDOS ",
+      "idunidad": 54,
+      "preciou": 25,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 55,
+      "producto": "ARETES TULLMAS",
+      "idunidad": 54,
+      "preciou": 8,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 56,
+      "producto": "BUFANDA",
+      "idunidad": 16,
+      "preciou": 180,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 57,
+      "producto": "BUFANDA",
+      "idunidad": 18,
+      "preciou": 200,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 58,
+      "producto": "BUFANDA",
+      "idunidad": 17,
+      "preciou": 180,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 59,
+      "producto": "BUFANDA",
+      "idunidad": 15,
+      "preciou": 90,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 60,
+      "producto": "BUFANDA",
+      "idunidad": 14,
+      "preciou": 70,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 61,
+      "producto": "BUFANDA LLAMERO",
+      "idunidad": 14,
+      "preciou": 70,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 62,
+      "producto": "CHUSPA ",
+      "idunidad": 8,
+      "preciou": 45,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 63,
+      "producto": "CHUMPI",
+      "idunidad": 7,
+      "preciou": 75,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 64,
+      "producto": "CHUSPA",
+      "idunidad": 46,
+      "preciou": 110,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 65,
+      "producto": "Llaveros de la cultura Jalqa",
+      "idunidad": 36,
+      "preciou": 15,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 66,
+      "producto": "Llaveros de la cultura Yampara",
+      "idunidad": 36,
+      "preciou": 18,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 67,
+      "producto": "MANILLA",
+      "idunidad": 24,
+      "preciou": 15,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 68,
+      "producto": "MANILLA",
+      "idunidad": 25,
+      "preciou": 15,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 69,
+      "producto": "MANILLA",
+      "idunidad": 23,
+      "preciou": 20,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 70,
+      "producto": "MANILLA",
+      "idunidad": 26,
+      "preciou": 25,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 71,
+      "producto": "MANILLA JALQA GRUESA",
+      "idunidad": 21,
+      "preciou": 25,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 72,
+      "producto": "MANILLA LILA YAMP",
+      "idunidad": 39,
+      "preciou": 20,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 73,
+      "producto": "Manillas acabadas ",
+      "idunidad": 43,
+      "preciou": 25,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 74,
+      "producto": "MANILLAS BLANCOY NEGRO",
+      "idunidad": 2,
+      "preciou": 90,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 75,
+      "producto": "MANILLAS GRUESAS ",
+      "idunidad": 38,
+      "preciou": 25,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 76,
+      "producto": "MANILLAS GRUESAS ",
+      "idunidad": 51,
+      "preciou": 20,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 77,
+      "producto": "MANILLAS TEJIDAS",
+      "idunidad": 40,
+      "preciou": 20,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 78,
+      "producto": "MANILLAS TEJIDAS",
+      "idunidad": 35,
+      "preciou": 15,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 79,
+      "producto": "MONEDEROS ",
+      "idunidad": 6,
+      "preciou": 75,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 80,
+      "producto": "MONEDEROS CUERO",
+      "idunidad": 6,
+      "preciou": 80,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 81,
+      "producto": "MONEDEROS HILADO",
+      "idunidad": 4,
+      "preciou": 90,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 82,
+      "producto": "ÑAJCHA CHUMPI",
+      "idunidad": 10,
+      "preciou": 55,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 83,
+      "producto": "ÑAJCHA CHUMPI",
+      "idunidad": 11,
+      "preciou": 55,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 84,
+      "producto": "PONCHO",
+      "idunidad": 1,
+      "preciou": 100,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 85,
+      "producto": "PORTA CELULAR",
+      "idunidad": 12,
+      "preciou": 35,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 86,
+      "producto": "PORTA CELULAR",
+      "idunidad": 5,
+      "preciou": 35,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 87,
+      "producto": "PORTA CELULAR",
+      "idunidad": 9,
+      "preciou": 35,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 88,
+      "producto": "PORTA CELULAR",
+      "idunidad": 13,
+      "preciou": 35,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 89,
+      "producto": "SAKA ",
+      "idunidad": 19,
+      "preciou": 196,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 90,
+      "producto": "SAKA ",
+      "idunidad": 20,
+      "preciou": 56,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 91,
+      "producto": "Saka de la cultura Jalqa",
+      "idunidad": 45,
+      "preciou": 180,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 92,
+      "producto": "Saka de la cultura Jalqa",
+      "idunidad": 47,
+      "preciou": 200,
+      "idsucursal": 3,
+      "idpventa": 4
+    },
+    {
+      "id": 93,
+      "producto": "CAMARA Y FOTOD",
+      "idunidad": 28,
+      "preciou": 5,
+      "idsucursal": 3,
+      "idpventa": 5
+    },
+    {
+      "id": 94,
+      "producto": "MAYORES",
+      "idunidad": 28,
+      "preciou": 10,
+      "idsucursal": 3,
+      "idpventa": 5
+    },
+    {
+      "id": 95,
+      "producto": "NIÑOS EXTRANJEROS",
+      "idunidad": 28,
+      "preciou": 5,
+      "idsucursal": 3,
+      "idpventa": 5
+    },
+    {
+      "id": 96,
+      "producto": "COSECHA DE TRIGO",
+      "idunidad": 41,
+      "preciou": 500,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 97,
+      "producto": "SERVICIO DE PESAJE EN BALANZA DE ALTO TONELAJE",
+      "idunidad": 53,
+      "preciou": 25,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 98,
+      "producto": "SERVICIO DE PROCESADO Y ACONDICIONADO DE MAIZ DE DIFERENTES VARIEDADES PARA SEMILLA DE LACATEGORIA REGISTRADA",
+      "idunidad": 52,
+      "preciou": 250,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 99,
+      "producto": "SERVICIO DE SEMBRADORA CON ABONADORA",
+      "idunidad": 41,
+      "preciou": 30,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 100,
+      "producto": "SERVICIO DE SUBSOLADOR CON CINCO REJAS",
+      "idunidad": 41,
+      "preciou": 30,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 101,
+      "producto": "SERVICIO DE TRACTOR CON IMPLEMENTOS(RASTRA, DESBROZADORA Y ARADO DE DISCO, ETC)",
+      "idunidad": 41,
+      "preciou": 210,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 102,
+      "producto": "SERVICIO DE TRACTOR GRANDE CON ROMPLAWP, RASTRA Y ARADO DE DISCO",
+      "idunidad": 41,
+      "preciou": 210,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 103,
+      "producto": "SERVICIO DE TRACTOR GRANDE CON SUBSOLADOR FR CINCO REJAS",
+      "idunidad": 41,
+      "preciou": 210,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 104,
+      "producto": "SERVICIO DE TRACTOR GRANDE Y SEMBRADORA CON ABONADORA",
+      "idunidad": 41,
+      "preciou": 220,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 105,
+      "producto": "SERVICIO DE TRACTOR MEDIANO CON DESGRANADORA DE MAIZ",
+      "idunidad": 50,
+      "preciou": 4,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 106,
+      "producto": "SERVICIO DE TRACTOR MEDIANO CON DESGRANADORA DE MAIZ TRILLADORA DE GRANO Y DESPICADORA DE MANI",
+      "idunidad": 50,
+      "preciou": 6,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 107,
+      "producto": "SERVICIO DE TRACTOR MEDIANO CON FUMIGADORA A TRACCION MOTRIZ",
+      "idunidad": 41,
+      "preciou": 160,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 108,
+      "producto": "VENTA DE AJI COMERCIAL EN VAINA DE DIFERENTES ECOTIPOS",
+      "idunidad": 27,
+      "preciou": 140,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 109,
+      "producto": "VENTA DE MAIZ EN GRANO DESCARTE DE DIFERENTES VARIEDADES",
+      "idunidad": 50,
+      "preciou": 40,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 110,
+      "producto": "VENTA DE MANI EN VAINA DESCARTE DE DIFERENTESVARIEDADES",
+      "idunidad": 50,
+      "preciou": 200,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 111,
+      "producto": "VENTA DE QUESO",
+      "idunidad": 42,
+      "preciou": 20,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 112,
+      "producto": "VENTA DE SEMILLA DE MAIZ CATEGORIA REGISTRADA, VARIEDAD IBO-128",
+      "idunidad": 29,
+      "preciou": 300,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 113,
+      "producto": "VENTA DE SEMILLA DE MANI CATEGORIA REGISTRADA I DE LAS VARIEDADES: COLORADO IBOPERE",
+      "idunidad": 30,
+      "preciou": 600,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 114,
+      "producto": "VENTA DE TORETES DESCARTES POR CARACTERISTICAS FENOTIPICAS NO DESEABLES PARA LA MULTIPLICACION(DESCARTES POR ELECCION)",
+      "idunidad": 54,
+      "preciou": 6.5,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 115,
+      "producto": "VENTA DE TORETES REPRODUCTORES MACHOS DE 2 AÑOS EN EL CENTRO EXPERIMENTAL EL SALVADOR",
+      "idunidad": 54,
+      "preciou": 4200,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 116,
+      "producto": "VENTA DE TOROS DESCARTES POR CARACTERISTICAS FENOTIPICAS NO DESEABLES PARALA MULTIPLICACION( DESCARTES POR ELECCION) Y CUMPLIO SU CICLO",
+      "idunidad": 54,
+      "preciou": 6.5,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 117,
+      "producto": "VENTA DE UVA BLANCA PARA BODEGA",
+      "idunidad": 50,
+      "preciou": 190,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 118,
+      "producto": "VENTA DE UVA DE MESA BLANCA NOSELECCIONADA (CAJA DE 25 KG)",
+      "idunidad": 33,
+      "preciou": 130,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 119,
+      "producto": "VENTA DE UVA DE MESA BLANCA SELECCIONADA (CAJA DE 25 KG)",
+      "idunidad": 33,
+      "preciou": 150,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 120,
+      "producto": "VENTA DE UVA DE MESA NEGRA NO SELECCIONADA (CAJA DE 25 KG)",
+      "idunidad": 33,
+      "preciou": 120,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 121,
+      "producto": "VENTA DE UVA DE MESANEGRA SELECCIONADA (CAJA DE 25 KG)",
+      "idunidad": 33,
+      "preciou": 130,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 122,
+      "producto": "VENTA DE UVA NEGRA PARA BODEGA",
+      "idunidad": 50,
+      "preciou": 160,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 123,
+      "producto": "VENTA DE VACAS DESCARTES POR PRESENTAR DIFERENTES PROBLEMAS QUE AFECTAN SU REPRODUCCION (EDAD,ENFERMEDADES)",
+      "idunidad": 54,
+      "preciou": 6.5,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 124,
+      "producto": "VENTA DE VAQUILLAS DESCARTES POR CARACTERISTICAS FENOTIPICAS NO DESEABLES PARA LA MULTIPLICACION(DESCARTE POR ELECCION)",
+      "idunidad": 54,
+      "preciou": 6.5,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 125,
+      "producto": "VENTA DE VAQUILLAS REPRODUCTORAS HEMBRAS DE 2 AÑOS EN EL CENTRO EXPERIMENTAL EL SALVADOR",
+      "idunidad": 54,
+      "preciou": 4200,
+      "idsucursal": 4,
+      "idpventa": 6
+    },
+    {
+      "id": 126,
+      "producto": "PARQUEO AUTOS",
+      "idunidad": 49,
+      "preciou": 5,
+      "idsucursal": 4,
+      "idpventa": 7
+    },
+    {
+      "id": 127,
+      "producto": "PARQUEO MOTOS",
+      "idunidad": 49,
+      "preciou": 2.5,
+      "idsucursal": 4,
+      "idpventa": 7
+    },
+    {
+      "id": 128,
+      "producto": "RENOVACION TARJETAS DE OPERACIÓN",
+      "idunidad": 54,
+      "preciou": 25,
+      "idsucursal": 4,
+      "idpventa": 8
+    },
+    {
+      "id": 129,
+      "producto": "RENOVACION TARJETAS DE OPERACIÓN",
+      "idunidad": 54,
+      "preciou": 40,
+      "idsucursal": 4,
+      "idpventa": 8
+    },
+    {
+      "id": 130,
+      "producto": "REPOSICION FORMULARIO 101",
+      "idunidad": 54,
+      "preciou": 5,
+      "idsucursal": 4,
+      "idpventa": 9
+    },
+    {
+      "razonSocial": "JOSEFO MENDOZA",
+      "nroDocumento": "1111111",
+      "tipoDoc": "NIT",
+      "id": 131
+    }
+  ],
+  "unidades": [
+    {
+      "id": 1,
+      "unidad_medida": "1 x 1.10 m"
+    },
+    {
+      "id": 2,
+      "unidad_medida": "1.85 x 85 cm"
+    },
+    {
+      "id": 3,
+      "unidad_medida": "100 UNIDADES"
+    },
+    {
+      "id": 4,
+      "unidad_medida": "11 X 12 cm"
+    },
+    {
+      "id": 5,
+      "unidad_medida": "11 x 7 cm"
+    },
+    {
+      "id": 6,
+      "unidad_medida": "12 x 12 cm"
+    },
+    {
+      "id": 7,
+      "unidad_medida": "120 x 4.5 cm"
+    },
+    {
+      "id": 8,
+      "unidad_medida": "13 x 12 cm"
+    },
+    {
+      "id": 9,
+      "unidad_medida": "13 x 8 cm"
+    },
+    {
+      "id": 10,
+      "unidad_medida": "130 x 4.5 cm"
+    },
+    {
+      "id": 11,
+      "unidad_medida": "131 x 4.5 cm"
+    },
+    {
+      "id": 12,
+      "unidad_medida": "14 x 7.4 cm"
+    },
+    {
+      "id": 13,
+      "unidad_medida": "14.5 x 8 cm"
+    },
+    {
+      "id": 14,
+      "unidad_medida": "160 x 15 cm"
+    },
+    {
+      "id": 15,
+      "unidad_medida": "185 x 15 cm"
+    },
+    {
+      "id": 16,
+      "unidad_medida": "260 x 15 cm"
+    },
+    {
+      "id": 17,
+      "unidad_medida": "265 x 15 cm"
+    },
+    {
+      "id": 18,
+      "unidad_medida": "275 x 15 cm"
+    },
+    {
+      "id": 19,
+      "unidad_medida": "37 x 22 cm"
+    },
+    {
+      "id": 20,
+      "unidad_medida": "69 x 39 cm"
+    },
+    {
+      "id": 21,
+      "unidad_medida": "74 x 54 cm"
+    },
+    {
+      "id": 22,
+      "unidad_medida": "AMBIENTE"
+    },
+    {
+      "id": 23,
+      "unidad_medida": "ANCHO 1 cm"
+    },
+    {
+      "id": 24,
+      "unidad_medida": "ANCHO 1.5 cm"
+    },
+    {
+      "id": 25,
+      "unidad_medida": "ANCHO 1.6 cm"
+    },
+    {
+      "id": 26,
+      "unidad_medida": "ANCHO 1.8 cm"
+    },
+    {
+      "id": 27,
+      "unidad_medida": "ARROBA"
+    },
+    {
+      "id": 28,
+      "unidad_medida": "BOLETO"
+    },
+    {
+      "id": 29,
+      "unidad_medida": "BOLSA DE 20 KG"
+    },
+    {
+      "id": 30,
+      "unidad_medida": "BOLSA DE 35 KG"
+    },
+    {
+      "id": 31,
+      "unidad_medida": "CABEZA"
+    },
+    {
+      "id": 32,
+      "unidad_medida": "CABEZAS"
+    },
+    {
+      "id": 33,
+      "unidad_medida": "CAJA"
+    },
+    {
+      "id": 34,
+      "unidad_medida": "COLONIA"
+    },
+    {
+      "id": 35,
+      "unidad_medida": "DELGADOS"
+    },
+    {
+      "id": 36,
+      "unidad_medida": "DIFERENTES TAMAÑOS"
+    },
+    {
+      "id": 37,
+      "unidad_medida": "DOCENA"
+    },
+    {
+      "id": 38,
+      "unidad_medida": "GRUESAS"
+    },
+    {
+      "id": 39,
+      "unidad_medida": "GRUESAS TUPIDO"
+    },
+    {
+      "id": 40,
+      "unidad_medida": "GRUESOS"
+    },
+    {
+      "id": 41,
+      "unidad_medida": "HECTÁREA"
+    },
+    {
+      "id": 42,
+      "unidad_medida": "KILOGRAMOS"
+    },
+    {
+      "id": 43,
+      "unidad_medida": "L18 A3"
+    },
+    {
+      "id": 44,
+      "unidad_medida": "L4A3"
+    },
+    {
+      "id": 45,
+      "unidad_medida": "LARGO 16cm ANCHO 21cm"
+    },
+    {
+      "id": 46,
+      "unidad_medida": "LARGO 19cm* ANCHO15cm"
+    },
+    {
+      "id": 47,
+      "unidad_medida": "LARGO 30cm ANCHO 23cm"
+    },
+    {
+      "id": 48,
+      "unidad_medida": "LITROS"
+    },
+    {
+      "id": 49,
+      "unidad_medida": "LUGAR"
+    },
+    {
+      "id": 50,
+      "unidad_medida": "QUINTALES"
+    },
+    {
+      "id": 51,
+      "unidad_medida": "TODO TAMAÑO GRUESAS"
+    },
+    {
+      "id": 52,
+      "unidad_medida": "TONELADA EN BRUTO"
+    },
+    {
+      "id": 53,
+      "unidad_medida": "TONELADA PESO BRUTO Y TARA"
+    },
+    {
+      "id": 54,
+      "unidad_medida": "UNIDAD"
+    },
+    {
+      "id": 55,
+      "unidad_medida": "UNIDAD DE 10 METROS"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 2,
+      "usuario": "p.correa@yahho.com",
+      "password": "1x2x3x",
+      "nombre": "Pamela Correa",
+      "nivel": 2
+    },
+    {
+      "id": 4,
+      "usuario": "juan1577@hotmail.com",
+      "password": "654321",
+      "nombre": "Juan José Carrasco Poveda",
+      "nivel": 2
+    },
+    {
+      "id": 1,
+      "usuario": "mendoza@gmail.com",
+      "password": "123",
+      "nombre": "José Mendoza Vargas",
+      "nivel": 1
+    },
+    {
+      "id": 5,
+      "usuario": "p.correa",
+      "password": "654321",
+      "nombre": "Pamela Correa",
+      "nivel": 2
+    },
+    {
+      "id": 7,
+      "usuario": "p.correa@yahhho.com",
+      "password": "123456789",
+      "nombre": "josefo mendoza",
+      "nivel": 1
+    },
+    {
+      "id": 8,
+      "usuario": "p2.correa@yahho.com",
+      "password": "1x2x3x",
+      "nombre": "JOSEFO MENDOZA",
+      "nivel": 2
+    },
+    {
+      "id": 9,
+      "usuario": "p13213.correa@yahho.com",
+      "password": "111111111",
+      "nombre": "JOse mendoza",
+      "nivel": 2
+    },
+    {
+      "id": 10,
+      "usuario": "jjc.correa@yahho.com",
+      "password": "111111",
+      "nombre": "Juan jose carrasco poveda",
+      "nivel": 2
+    },
+    {
+      "id": 12,
+      "usuario": "juanco@gamail.com",
+      "password": "111111",
+      "nombre": "juan jose carrasco",
+      "nivel": 1
+    },
+    {
+      "usuario": "mario@mail.com",
+      "password": "654321",
+      "nombre": "Mario Campos",
+      "nivel": "2",
+      "id": 13
+    }
+  ],
+  "rolpermisos": [
+    {
+      "id": 1,
+      "id_usuario": 1,
+      "permisos": [
+        "LOG",
+        "ADMIN",
+        "canDoFactura",
+        "canFindFactura",
+        "canSucursal",
+        "canpVenta",
+        "canProductos",
+        "canUnidad",
+        "canUsuario"
+      ]
+    },
+    {
+      "id": 2,
+      "id_usuario": 12,
+      "permisos": [
+        "LOG",
+        "canDoFactura",
+        "canFindFactura"
+      ]
+    }
+  ],
+  "permisos": [
+    {
+      "id": 1,
+      "permiso": "LOG"
+    },
+    {
+      "id": 2,
+      "permiso": "ADMIN"
+    },
+    {
+      "id": 3,
+      "permiso": "canDoFactura"
+    },
+    {
+      "id": 4,
+      "permiso": "canFindFactura"
+    },
+    {
+      "id": 5,
+      "permiso": "canSucursal"
+    },
+    {
+      "id": 6,
+      "permiso": "canpVenta"
+    },
+    {
+      "id": 7,
+      "permiso": "canProductos"
+    },
+    {
+      "id": 8,
+      "permiso": "canUnidad"
+    },
+    {
+      "id": 9,
+      "permiso": "canUsuario"
+    }
+  ]
+}

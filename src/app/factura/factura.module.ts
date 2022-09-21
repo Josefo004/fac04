@@ -10,7 +10,6 @@ import { FacturaRoutingModule } from './factura-routing.module';
 import { FacturaComponent } from './pages/factura/factura.component';
 import { FindFacturaComponent } from './pages/find-factura/find-factura.component';
 import { HomeComponent } from './pages/home/home.component';
-import { ModalNewRazonSocialComponent } from './pages/modal-new-razon-social/modal-new-razon-social.component';
 import { VerDetalleComponent } from './pages/ver-detalle/ver-detalle.component';
 
 @NgModule({
@@ -18,7 +17,6 @@ import { VerDetalleComponent } from './pages/ver-detalle/ver-detalle.component';
     FacturaComponent,
     FindFacturaComponent,
     HomeComponent,
-    ModalNewRazonSocialComponent,
     VerDetalleComponent
   ],
   imports: [

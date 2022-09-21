@@ -27,7 +27,7 @@
   <section *ngIf="ventasItems.length>0">
     <div class="card">
       <div class="card-header">
-        <h2>Ventas y Facturas</h2>
+        <h2>Facturas</h2>
       </div>
       <div class="card-body">
         <div class="row">
@@ -57,11 +57,6 @@
                     <span class="p-2">
                       <a (click)="verdetalle(item.id)" class="badge bg-primary" title="DETALLE DE : {{ item.razonSocial }}">
                         <i class="fa fa-eye"></i>
-                      </a>
-                    </span>
-                    <span class="p-2">
-                      <a href="" class="badge bg-primary" title="IMPRIMIR DOC : {{ item.id }}">
-                        <i class="fa fa-file-pdf"></i>
                       </a>
                     </span>
                   </td>
