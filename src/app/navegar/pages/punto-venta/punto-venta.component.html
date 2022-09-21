@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-4 mx-auto" *ngFor="let item of pdvItems; index as i">
+    <div class="card">  
+      <div class="card-header">
+        <strong>Punto : {{item.codigoPuntoVenta}}</strong> 
+      </div>
+      <div class="card-body">
+        <p>{{ item.nombrePuntoVenta }}</p>
+        <a (click)="irApuntoVenta(i)" class="btn btn-primary btn-sm">Punto - {{item.codigoPuntoVenta}}</a>
+      </div>
+      <div class="card-footer">
+        <p class="card-text small"><strong>Tipo: </strong>{{item.tipoPuntoVenta | lowercase}}</p>
+      </div>
+    </div>
+  </div>
+</div>

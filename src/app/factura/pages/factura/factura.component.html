@@ -1,0 +1,224 @@
+<div *ngIf="titulo.length>0">
+  <section>
+    <div class="row mb-2">
+      <div class="col-md-3">
+        <label for="termino">No de Documento</label>
+        <app-input
+          [terminoIn]="razonSocial.nroDocumento"
+          (onEnter)="buscarRazonSocial( $event )"
+          >
+        </app-input>
+      </div>
+      <div class="col-md-5">
+        <label for="razonSocial">Razon Social</label>
+        <div class="input-group mb-3">
+          <input 
+            type="text" 
+            name="rsname"
+            class="form-control" 
+            [(ngModel)]="razonSocial.razonSocial"
+            readonly>
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="far fa-file-alt"></span>
+            </div>
+          </div>  
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="razonSocial">.</label>
+        <div class="input-group mb-3">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"  (click)="colocar(); llamaramodal();">
+            Nueva Razón Social
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="input-group mb-3">
+        <ng-autocomplete 
+          class="form-control col-md-6"
+          [data]="productos"
+          [searchKeyword]="campo"
+          placeholder="PRODUCTO ..."
+          (selected)="selectEvent( $event )"
+          (inputCleared)="clearedEvent()"
+          [itemTemplate]="itemTemplate"
+          [notFoundTemplate]="notFoundTemplate"
+          #auto>                                 
+        </ng-autocomplete>
+        <ng-template #itemTemplate let-item>
+          <a href="javascript:void(0)">
+            <span [innerHTML]="item.producto"></span>
+        </a>
+        </ng-template>
+        <ng-template #notFoundTemplate let-notFound>
+          <div class="alert alert-info">NO EXISTE PRODUCTO</div>
+        </ng-template>
+        <input type="text" name="cantidad" [(ngModel)]="cantidadP" class="form-control m-input col-md-2" placeholder="CANTIDAD" autocomplete="off">
+        <input type="text" name="unidad" [(ngModel)]="unidadP" class="form-control m-input col-md-2" placeholder="UNIDAD MEDIDA" readonly>
+        <input type="text" name="preciou" [(ngModel)]="precioUP" class="form-control m-input col-md-2" placeholder="PRECIO UNITARIO">
+        <div class="input-group-append">
+        <button type="button" class="btn btn-primary" (click)="agregar()" >Agregar</button>
+        </div>
+      </div>
+      <div id="newRow"></div>
+    </div>
+    
+    <div class="row">
+
+      <section *ngIf="productosVende.length>0">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <table class="table table-hover table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Nro</th>
+                      <th scope="col">Cantidad</th>
+                      <th scope="col">Producto</th>
+                      <th class="text-right" scope="col">Precio Unitario</th>
+                      <th class="text-right" scope="col">Total</th>
+                      <th scope="col">-</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let item of productosVende; let i = index ">
+                      <td>{{ i+1 }}</td>
+                      <td>{{ item.cantidad+' - '+item.unidad | titlecase}}</td>
+                      <td>{{ item.producto | titlecase}}</td>
+                      <td class="text-right">Bs. {{ item.precioUnitario | number : '1.2-2' }}</td>
+                      <td class="text-right">Bs. {{ item.cantidad * item.precioUnitario | number : '1.2-2' }}</td>
+                      <td><button type="button" class="btn btn-info btn-sm btn-block" (click)="quitar(i)" >Quitar</button> </td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <th colspan="4" class="text-right">Total:</th>
+                      <td class="text-right">Bs. {{totalV | number : '1.2-2'}}</td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" [(ngModel)]="facturar">
+              <label class="form-check-label" for="exampleCheck1">Facturar Venta </label>
+            </div>
+            <div *ngIf="hayError">
+              <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>ERROR!!</strong> Sin Razón Social ó Lista de productos
+                <button (click)="hayError=false" type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary btn-sm" (click)="guardarVenta()">Guardar Venta</button>
+          </div>
+        </div>
+      </section>
+      
+    </div>
+  </section>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Razon Social</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <section>
+          
+          <div class="row mb-12">
+            <div class="col-6">
+              <label for="razonSocial">Razon Social</label>
+                <input 
+                  type="text" 
+                  name="rsnameM"
+                  class="form-control" 
+                  [(ngModel)]="rsnameM">
+              
+            </div>
+            <div class="col-4">
+              <label for="razonSocial">Nro Documento</label>
+              
+                <input 
+                  type="text" 
+                  name="nroDocumentoM"
+                  class="form-control" 
+                  [(ngModel)]="nroDocumentoM">
+              
+            </div>
+            <div class="col-2">
+              <label for="razonSocial">Tipo de Documento</label>
+              <div class="input-group">
+                <select class="form-control" id="tipoDocumento" [(ngModel)]="tipoDocM">
+                  <option>NIT</option>
+                  <option>CEDULA</option>
+                  <option>PASAPORTE</option>
+                  <option>R.U.N.</option>
+                </select>
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-caret-down"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-12">
+            <div class="col-6 pt-3">
+              <label for="razonSocial">Correo Electronico</label>
+                <input 
+                  type="text" 
+                  name="rsnameM"
+                  class="form-control" 
+                  [(ngModel)]="emilio">
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="colocar()">Guardar Razon Social</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Imprimir</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section>
+
+</section>
+<app-oops-page></app-oops-page>

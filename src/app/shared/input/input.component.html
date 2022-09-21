@@ -1,0 +1,16 @@
+<form (ngSubmit)="buscar()" autocomplete="off">
+  <div class="input-group mb-3">
+    <input 
+      type="text" 
+      name="termino"
+      class="form-control" 
+      [(ngModel)]="termino"
+      (input)="teclaPrecionada()"
+      placeholder=" ... ">
+      <div class="input-group-append">
+        <div class="input-group-text">
+          <span class="fas fa-search"></span>
+        </div>
+      </div>
+  </div>
+</form>

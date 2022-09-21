@@ -1,0 +1,13 @@
+  <div class="row">
+    <div class="col-4 mx-auto" *ngFor="let item of sucItems; index as i">
+      <div class="card">  
+        <div class="card-header">
+          <h2 class="card-title">{{ item.nombre }}</h2>
+        </div>
+        <div class="card-body">
+          <p class="card-text small">{{item.direccion | titlecase}}</p>
+          <a (click)="irAsucursal(i)" class="btn btn-primary btn-sm">Sucursal - {{item.nroSucursal}}</a>
+        </div>
+      </div>
+    </div>
+  </div>

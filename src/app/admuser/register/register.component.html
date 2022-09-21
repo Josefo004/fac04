@@ -1,0 +1,51 @@
+
+
+<div class="row">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body register-card-body">
+        <p class="login-box-msg">Registro de Usuarios</p>
+        <form  (ngSubmit)="onRegister()" [formGroup]="registerForm" autocomplete="off">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" formControlName="name" placeholder="Nombre Completo" required>
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-user"></span>
+              </div>
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" formControlName="email" placeholder="Correo electronico" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <span class="fas fa-envelope"></span>
+                </div>
+              </div>
+            </div>
+            <input type="hidden" class="form-control" formControlName="nivel" placeholder="Contraseña" value = "2"required >
+            <div class="input-group mb-3">
+              <input type="password" class="form-control" formControlName="password" placeholder="Contraseña" required >
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <span class="fas fa-lock"></span>
+                </div>
+              </div>
+            </div>
+          <div class="row">
+            <div class="col-4">
+              
+            </div>
+            <!-- /.col -->
+            <div class="col-8">
+              <button type="submit" class="btn btn-primary btn-block" [disabled]="registerForm.invalid">Nuevo Registro</button>
+            </div>
+            <!-- /.col -->
+          </div>
+        </form>
+      </div>
+      <!-- /.form-box -->
+    </div><!-- /.card -->
+  </div>
+</div>
+
+
