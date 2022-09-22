@@ -1,16 +1,20 @@
 import { DatePipe } from '@angular/common';
-import { Injectable } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import jsPDF from 'jspdf';
 import { TProductoV, TpuntoVenta, Tsucursal, TVenta } from 'src/app/interfaces/interfaces';
 import { NavegarService } from 'src/app/navegar/services/navegar.service';
-import { DetalleVentaService } from './detalle-venta.service';
-import { Utils } from './utils.service';
-import { VentasService } from './ventas.service';
+import { DetalleVentaService } from '../../services/detalle-venta.service';
+import { Utils } from '../../services/utils.service';
+import { VentasService } from '../../services/ventas.service';
 
-@Injectable({
-  providedIn: 'root'
+@Component({
+  selector: 'app-imprimir',
+  templateUrl: './imprimir.component.html',
+  styles: [
+  ]
 })
-export class ImprimirService {
+export class ImprimirComponent implements OnInit {
+
   detalleVenta : TProductoV[]=[];
   totalV       : number = 0;
   venta        : TVenta = {
@@ -50,6 +54,10 @@ export class ImprimirService {
               private navegarservice: NavegarService,
               private utils: Utils) { }
 
+  ngOnInit(): void {
+    
+  }
+  
   para_imprimir(){
     this.ventasService.buscarUnaVenta(this.idVenta)
       .subscribe(resp => {
@@ -82,7 +90,7 @@ export class ImprimirService {
     }
   }
 
-  
+
   imprimir_Ticket(){
     console.log('IMPRIMIR');
     

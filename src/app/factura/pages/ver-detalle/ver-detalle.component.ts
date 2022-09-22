@@ -4,8 +4,7 @@ import { TProductoV, TpuntoVenta, Tsucursal, TVenta } from 'src/app/interfaces/i
 import { DetalleVentaService } from '../../services/detalle-venta.service';
 import { VentasService } from '../../services/ventas.service';
 import { NavegarService } from '../../../navegar/services/navegar.service';
-import { Utils } from '../../services/utils.service';
-import { ImprimirService } from '../../services/imprimir.service';
+import { ImprimirComponent } from '../imprimir/imprimir.component';
 
 @Component({
   selector: 'app-ver-detalle',
@@ -55,8 +54,7 @@ export class VerDetalleComponent implements OnInit {
 
   constructor(private ventasService: VentasService,
               private detalleVentasService: DetalleVentaService,
-              private navegarservice: NavegarService,
-              private imprimirService: ImprimirService) { }
+              private navegarservice: NavegarService) { }
 
   ngOnInit(): void {
     this.ventasService.buscarUnaVenta(this.idVenta)
@@ -92,9 +90,9 @@ export class VerDetalleComponent implements OnInit {
 
   imprimir(){
     this.ventasService.sidVenta(this.venta.id);
-    this.imprimirService.para_imprimir();
-    this.imprimirService.imprimir_Ticket();
-
+    ImprimirComponent
+    // this.imprimirService.para_imprimir();
+    // this.imprimirService.imprimir_Ticket();
   }
 
  
