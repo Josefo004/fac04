@@ -4,7 +4,7 @@ import { TProductoV, TpuntoVenta, Tsucursal, TVenta } from 'src/app/interfaces/i
 import { DetalleVentaService } from '../../services/detalle-venta.service';
 import { VentasService } from '../../services/ventas.service';
 import { NavegarService } from '../../../navegar/services/navegar.service';
-import { ImprimirComponent } from '../imprimir/imprimir.component';
+import { ImprimirService } from '../../services/imprimir.service';
 
 @Component({
   selector: 'app-ver-detalle',
@@ -44,19 +44,29 @@ export class VerDetalleComponent implements OnInit {
     sucursalId: 0
   }
 
-  get titulo (){
-    return this.navegarservice.titulo;
-  }
+  // get titulo (){
+  //   return this.navegarservice.titulo;
+  // }
 
-  get idVenta (){
-    return this.ventasService.idVenta;
-  }
+  // get idVenta (){
+  //   return this.ventasService.idVenta;
+  // }
+
+  titulo = 'JOSE';
+  idVenta = 4;
 
   constructor(private ventasService: VentasService,
               private detalleVentasService: DetalleVentaService,
-              private navegarservice: NavegarService) { }
+              private navegarservice: NavegarService,
+              private imprimirService: ImprimirService) { }
 
   ngOnInit(): void {
+    // this.imprimirService.para_imprimir();
+    // this.venta = this.imprimirService.venta;
+    // this.puntoVentaS = this.imprimirService.puntoVentaS;
+    // this.sucursalS = this.imprimirService.sucursalS;
+    // this.detalleVenta = this.imprimirService.detalleVenta;
+    // this.totalV = this.imprimirService.totalV;
     this.ventasService.buscarUnaVenta(this.idVenta)
       .subscribe(resp => {
         this.venta = resp;
@@ -77,7 +87,10 @@ export class VerDetalleComponent implements OnInit {
         this.detalleVenta = resp;
         console.log(this.detalleVenta);
         this.totalProductos();
+        //////////////////
+        this.imprimirService.para_imprimir(this.idVenta);
       });
+    ///////////
   }
 
   totalProductos(){
@@ -89,11 +102,11 @@ export class VerDetalleComponent implements OnInit {
   }
 
   imprimir(){
-    this.ventasService.sidVenta(this.venta.id);
-    ImprimirComponent
-    // this.imprimirService.para_imprimir();
-    // this.imprimirService.imprimir_Ticket();
+    this.imprimirService.imprimir_Ticket();
   }
 
+  imprimir2(){
+    this.imprimirService.imprimir_Carta();
+  }
  
 }

@@ -1,19 +1,16 @@
 import { DatePipe } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 import jsPDF from 'jspdf';
 import { TProductoV, TpuntoVenta, Tsucursal, TVenta } from 'src/app/interfaces/interfaces';
 import { NavegarService } from 'src/app/navegar/services/navegar.service';
-import { DetalleVentaService } from '../../services/detalle-venta.service';
-import { Utils } from '../../services/utils.service';
-import { VentasService } from '../../services/ventas.service';
+import { DetalleVentaService } from './detalle-venta.service';
+import { Utils } from './utils.service';
+import { VentasService } from './ventas.service';
 
-@Component({
-  selector: 'app-imprimir',
-  templateUrl: './imprimir.component.html',
-  styles: [
-  ]
+@Injectable({
+  providedIn: 'root'
 })
-export class ImprimirComponent implements OnInit {
+export class ImprimirService {
 
   detalleVenta : TProductoV[]=[];
   totalV       : number = 0;
@@ -53,13 +50,9 @@ export class ImprimirComponent implements OnInit {
               private detalleVentasService: DetalleVentaService,
               private navegarservice: NavegarService,
               private utils: Utils) { }
-
-  ngOnInit(): void {
-    
-  }
   
-  para_imprimir(){
-    this.ventasService.buscarUnaVenta(this.idVenta)
+  para_imprimir(idV:number){
+    this.ventasService.buscarUnaVenta(idV)
       .subscribe(resp => {
         this.venta = resp;
         console.log('VENTA ',this.venta);
@@ -74,7 +67,7 @@ export class ImprimirComponent implements OnInit {
               })
           });
       });
-    this.detalleVentasService.tomarDetalle(this.idVenta)
+    this.detalleVentasService.tomarDetalle(idV)
       .subscribe(resp => {
         this.detalleVenta = resp;
         console.log('DETALLE ', this.detalleVenta);
@@ -194,5 +187,120 @@ export class ImprimirComponent implements OnInit {
     doc.output('dataurlnewwindow');
 
   }
+
+  imprimir_Carta(){
+    console.log('IMPRIMIR');
+    
+    let ancho = 215.9;
+    let alto = 279.4;
+    let kk = this.detalleVenta.length
+    if (kk>1) alto = 100 + (6*kk);
+    //let doc = new jsPDF ('p', 'mm', [alto, ancho]);
+    let doc = new jsPDF ('p', 'mm', 'letter');
+    let posy = 0;
+    doc.addImage('/assets/dist/img/logo_app_gadch.png','PNG', ancho-35, 10, 25, 25);
+
+    function derechaTxt(txt:string){
+      posy = posy + 3;
+      doc.setFontSize(7).setFont('courier', 'normal').text(txt, ancho-10, posy, {align: 'right'});  
+    }
+
+    function centrarTxtB(txt:string){
+      posy = posy + 3;
+      doc.setFontSize(8).setFont('courier', 'bold').text(txt, ancho/2, posy, {align: 'center'});  
+    }
+
+    function pardeText(txt1:string, txt2:string){
+      posy = posy + 3;
+      doc.setFontSize(8).setFont('courier', 'bold').text(txt1 , 10, posy, {align:'left'});
+      doc.setFontSize(7).setFont('courier', 'normal').text(txt2, 47, posy, {align:'left'});
+    }
+
+    function sItem(dx:TProductoV){
+      // doc.setFontSize(8).setFont('courier', 'bold').text('Producto', 10, posy, {align:'left'});
+      // doc.setFontSize(8).setFont('courier', 'bold').text('CANTIDAD', 90, posy, {align:'left'});
+      // doc.setFontSize(8).setFont('courier', 'bold').text('PRECIO UNITARIO', 130, posy, {align:'right'});
+      // doc.setFontSize(8).setFont('courier', 'bold').text('SUB TOTAL', 170, posy, {align:'right'});
+
+
+      let tparcial = dx.precioUnitario * dx.cantidad;
+      posy = posy + 3;
+      doc.setFontSize(8).setFont('courier', 'bold').text('00000'+dx.id+' - '+dx.producto, 10, posy, {align:'left'});
+      doc.setFontSize(7).setFont('courier', 'normal').text(dx.cantidad+' - '+dx.unidad, 100, posy, {align:'left'});
+      doc.setFontSize(7).setFont('courier', 'normal').text(dx.precioUnitario.toFixed(2)+'', 160, posy, {align:'right'});
+      doc.setFontSize(7).setFont('courier', 'normal').text(tparcial.toFixed(2)+'', 190, posy, {align:'right'});
+    }
+
+    function total(tt:number){
+      posy = posy + 4;
+      doc.setFontSize(9).setFont('courier', 'bold').text('TOTAL', 150, posy, {align:'left'});
+      doc.setFontSize(7).setFont('courier', 'bold').text(tt.toFixed(2), 190, posy, {align:'right'});
+    }
+
+    function lineaDash(){
+      posy = posy + 2;
+      doc.setLineDashPattern([2,1],1);
+      doc.line(10,posy,100,posy);
+      posy = posy + 1;
+    } 
+
+    function linea(){
+      posy = posy + 1;
+      doc.setLineDashPattern([0,0],1);
+      doc.line(4,posy,210,posy);
+    }
+
+    doc.setFontSize(20).setFont('courier', 'bold').text('FACTURA', 10, 20, {align: 'left'});
+    doc.setFontSize(9).setFont('courier', 'normal').text("(Con Derecho a Crédito Fiscal)", 10, 24, {align:'left'});
+    doc.setFontSize(11).setFont('courier', 'bold').text('GOBIERNO AUTONOMO DEPARTAMENTAL', 10, 29, {align: 'left'});
+    doc.setFontSize(11).setFont('courier', 'bold').text('DE CHUQUISACA', 10, 33, {align: 'left'});
+    posy = 36;
+    derechaTxt(this.sucursalS.nombre);
+    derechaTxt(this.puntoVentaS.nombrePuntoVenta);
+    derechaTxt(this.sucursalS.direccion);
+    //lineaDash();
+
+    pardeText('NIT','175982026');
+    pardeText('No Factura', this.venta.id+'');
+    pardeText('cod. Autorización','ASHKJDHYER213482762345');
+    lineaDash();
+
+    pardeText('Nombre/Razón Social', this.venta.razonSocial);
+    pardeText('NIT/CI/CEX', this.venta.nroDocumento);
+    pardeText('Cod Cliente', this.puntoVentaS.codigoPuntoVenta+''); //revisar
+    const datepipe: DatePipe = new DatePipe('en-US');
+    let formattedDate = datepipe.transform(this.venta.fechHora, 'dd-MM-YYYY HH:mm:ss'); 
+    if (formattedDate!=null) {
+      pardeText('Fecha - Hora', formattedDate);
+    }
+    lineaDash();
+
+    posy = posy + 5;
+    doc.setFontSize(12).setFont('courier', 'bold').text('DETALLE', ancho/2, posy, {align: 'center'});
+    posy = posy + 3;
+    doc.setFontSize(8).setFont('courier', 'bold').text('PRODUCTO', 10, posy, {align:'left'});
+    doc.setFontSize(8).setFont('courier', 'bold').text('CANTIDAD', 10, posy, {align:'left'});
+    doc.setFontSize(8).setFont('courier', 'bold').text('PRECIO UNITARIO', 160, posy, {align:'right'});
+    doc.setFontSize(8).setFont('courier', 'bold').text('SUB TOTAL', 190, posy, {align:'right'});
+    linea();
+    let k = this.detalleVenta.length;
+    for (let i = 0; i < k; i++) 
+      sItem(this.detalleVenta[i]);
+    linea();
+
+    total(this.totalV);
+
+    posy = posy + 3;
+    doc.setFontSize(7).setFont('courier', 'normal').text(this.utils.numeroALetras(this.totalV) , 10, posy, {align:'left'});
+
+    posy = posy + 4;
+
+    doc.output('dataurlnewwindow');
+
+  }
+
+
+
+
 
 }

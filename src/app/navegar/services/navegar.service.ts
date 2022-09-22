@@ -22,7 +22,7 @@ export class NavegarService {
   }
 
   private apiUrl : string = environment.apiUrl;
-  private urlJulito : string = environment.apiJulito;
+  //private urlJulito : string = environment.apiJulito;
   
 
   constructor(private http: HttpClient) { }
@@ -52,8 +52,8 @@ export class NavegarService {
       "by": "ci",
       "q": "3659537"
     }
-    const urlJulio = `${this.urlJulito}`;
-    return this.http.post(urlJulio,bu);
+    //const urlJulio = `${this.urlJulito}`;
+    //return this.http.post(urlJulio,bu);
     //return this.http.get(urlJulio + '/?criteria='+ encodeURIComponent( JSON.stringify(criteria) ));
   }
   

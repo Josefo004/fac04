@@ -83,9 +83,9 @@ export class LoginComponent implements OnInit {
 
   }
 
-  julio(){
-    this.navegarService.julito()
-      .subscribe(resp => console.log(resp));
-  }
+  // julio(){
+  //   this.navegarService.julito()
+  //     .subscribe(resp => console.log(resp));
+  // }
 
 }

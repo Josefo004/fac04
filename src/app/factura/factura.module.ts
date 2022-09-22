@@ -11,15 +11,14 @@ import { FacturaComponent } from './pages/factura/factura.component';
 import { FindFacturaComponent } from './pages/find-factura/find-factura.component';
 import { HomeComponent } from './pages/home/home.component';
 import { VerDetalleComponent } from './pages/ver-detalle/ver-detalle.component';
-import { ImprimirComponent } from './pages/imprimir/imprimir.component';
+
 
 @NgModule({
   declarations: [
     FacturaComponent,
     FindFacturaComponent,
     HomeComponent,
-    VerDetalleComponent,
-    ImprimirComponent
+    VerDetalleComponent
   ],
   imports: [
     CommonModule,

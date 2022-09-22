@@ -4,10 +4,20 @@ import { RouterModule, Routes } from '@angular/router';
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
 import { AuthGuard } from './auth/guards/auth.guard';
 import { NgxPermissionsGuard } from 'ngx-permissions';
+import { LoginComponent } from './auth/pages/login/login.component';
 
 const routes:Routes = [
   {
-    path: 'auth', loadChildren: ()=>import('./auth/auth.module').then(m=>m.AuthModule)
+    //path: 'auth', loadChildren: ()=>import('./auth/auth.module').then(m=>m.AuthModule)
+    path: 'auth', 
+    children: [
+      {
+        path:'login', component: LoginComponent
+      },
+      {
+        path:'**', redirectTo: 'login'
+      }
+    ]
   },
   {
     path: 'navegar', loadChildren: ()=>import('./navegar/navegar.module').then(m=>m.NavegarModule),

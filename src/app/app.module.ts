@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { NgxPermissionsModule } from 'ngx-permissions';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AuthModule } from './auth/auth.module';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     SharedModule,
     NgxPermissionsModule.forRoot(),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent],

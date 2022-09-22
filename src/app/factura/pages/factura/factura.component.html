@@ -117,19 +117,8 @@
                 </button>
               </div>
             </div>
-            <button type="button" class="btn btn-primary btn-sm" (click)="guardarVenta()">Guardar Venta</button>
+            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal2" (click)="guardarVenta()">Guardar Venta</button>
             <div *ngIf="imprimirB">
-              <p></p>
-              <div class="fade show form-control-border" role="alert">
-                <div class="row">
-                  <div class="col-6">
-                    <button type="button" class="btn btn-primary btn-sm" (click)="imprimirt()">Imprimir en  Etiquetadora</button>
-                  </div>
-                  <div class="col-6">
-                    <button type="button" class="btn btn-primary btn-sm" (click)="imprimirt()">Imprimir en  Carta</button>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -216,16 +205,21 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Imprimir</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
-        </button>
+        </button> -->
       </div>
       <div class="modal-body">
-        ...
+        <div class="row">
+          <div class="col-6 d-flex justify-content-center">
+            <button type="button" class="btn btn-primary btn-sm"  data-dismiss="modal" (click)="imprimirt()">Imprimir en  Etiquetadora</button>
+          </div>
+          <div class="col-6 d-flex justify-content-center">
+            <button type="button" class="btn btn-primary btn-sm"  data-dismiss="modal" (click)="imprimirt()">Imprimir en  Carta</button>
+          </div>
+        </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>

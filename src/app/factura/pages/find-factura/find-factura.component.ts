@@ -3,6 +3,7 @@ import { TVenta } from 'src/app/interfaces/interfaces';
 import { NavegarService } from 'src/app/navegar/services/navegar.service';
 import { VentasService } from '../../services/ventas.service';
 import { Router } from '@angular/router';
+import { ImprimirService } from '../../services/imprimir.service';
 
 @Component({
   selector: 'app-find-factura',
@@ -23,7 +24,8 @@ export class FindFacturaComponent implements OnInit {
 
   constructor(private navegarservice:NavegarService,
               private ventasService: VentasService,
-              private router: Router) { }
+              private router: Router,
+              private imprimirService: ImprimirService) { }
 
   ngOnInit(): void {
     this.ultimos15();
@@ -72,6 +74,7 @@ export class FindFacturaComponent implements OnInit {
   verdetalle(idV:number){
     console.log('ID VENTA FIND FACTURA',idV);
     this.ventasService.sidVenta(idV);
+    this.imprimirService.para_imprimir(idV);
     this.router.navigate([`./factura/verdetalle`]);
   }
 
