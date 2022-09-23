@@ -1,1433 +1,137 @@
 {
-  "puntoventas": [
-    {
-      "id": 1,
-      "noPVenta": 1,
-      "idsucursal": 1,
-      "punto venta": "ITSA-HUACARETA"
-    },
-    {
-      "id": 2,
-      "noPVenta": 1,
-      "idsucursal": 2,
-      "punto venta": "CASTILLO DE LA GLORIETA"
-    },
-    {
-      "id": 3,
-      "noPVenta": 2,
-      "idsucursal": 2,
-      "punto venta": "CENTRO INTERNACIONAL DE CONVENCIONES – CICC"
-    },
-    {
-      "id": 4,
-      "noPVenta": 1,
-      "idsucursal": 3,
-      "punto venta": "TIENDA CETUR"
-    },
-    {
-      "id": 5,
-      "noPVenta": 2,
-      "idsucursal": 3,
-      "punto venta": "MUSEO CETUR"
-    },
-    {
-      "id": 6,
-      "noPVenta": 1,
-      "idsucursal": 4,
-      "punto venta": "DESARROLLO PRODUCTIVO"
-    },
-    {
-      "id": 7,
-      "noPVenta": 2,
-      "idsucursal": 4,
-      "punto venta": "PARQUELO LA MADONA"
-    },
-    {
-      "id": 8,
-      "noPVenta": 3,
-      "idsucursal": 4,
-      "punto venta": "UNIDAD DE TRANSPORTE"
-    },
-    {
-      "id": 9,
-      "noPVenta": 4,
-      "idsucursal": 4,
-      "punto venta": "DIRECCION DE MINERIA"
-    },
-    {
-      "id": 10,
-      "noPVenta": 1,
-      "idsucursal": 5,
-      "punto venta": "DEPORTES"
-    }
-  ],
   "sucursales": [
     {
       "id": 1,
-      "nosucursal": 0,
-      "sucursal": "CASA MATRIZ"
+      "nroSucursal": 0,
+      "nombre": "CASA MATRIZ",
+      "direccion": "PLAZA 25 DE MAYO NRO 17",
+      "telefono": "464-58144",
+      "created_at": "2022-07-21T21:01:38.000000Z",
+      "updated_at": "2022-07-21T21:01:38.000000Z"
     },
     {
       "id": 2,
-      "nosucursal": 1,
-      "sucursal": "LA GLORIETA"
+      "nroSucursal": 1,
+      "nombre": "SUCURSAL 1",
+      "direccion": "CARRETERA SUCRE YOTALA S/N, CASTILLO DE LA GLORIETA, ZONA LA GLORIETA",
+      "telefono": "464-58144",
+      "created_at": "2022-07-21T21:01:38.000000Z",
+      "updated_at": "2022-07-21T21:01:38.000000Z"
     },
     {
       "id": 3,
-      "nosucursal": 2,
-      "sucursal": "SAN ALBERTO"
+      "nroSucursal": 2,
+      "nombre": "SUCURSAL 2",
+      "direccion": "CALLE SAN ALBERTO NRO 413, ZONA CENTRAL",
+      "telefono": "464-58144",
+      "created_at": "2022-07-21T21:01:38.000000Z",
+      "updated_at": "2022-07-21T21:01:38.000000Z"
     },
     {
       "id": 4,
-      "nosucursal": 3,
-      "sucursal": "PASAJE GANDARILLAS"
+      "nroSucursal": 3,
+      "nombre": "SUCURSAL 3",
+      "direccion": "PASAJE GANDARILLAS S/N, ZONA LA MADONA",
+      "telefono": "464-58144",
+      "created_at": "2022-07-21T21:01:38.000000Z",
+      "updated_at": "2022-07-21T21:01:38.000000Z"
     },
     {
       "id": 5,
-      "nosucursal": 4,
-      "sucursal": "SEDEDE"
+      "nroSucursal": 4,
+      "nombre": "SUCURSAL 4",
+      "direccion": "CALLE MANUEL VILAR S/N, ZONA ESTADIUM PATRIA",
+      "telefono": "464-58144",
+      "created_at": "2022-07-21T21:01:39.000000Z",
+      "updated_at": "2022-07-21T21:01:39.000000Z"
     }
   ],
-  "productos": [
+  "puntoVentas": [
     {
       "id": 1,
-      "producto": "HORTALIZAS ( ARVEJAS)",
-      "idunidad": 27,
-      "preciou": 30,
-      "idsucursal": 1,
-      "idpventa": 1
+      "codigoPuntoVenta": 1,
+      "nombrePuntoVenta": "ITSA-HUACARETA",
+      "tipoPuntoVenta": "PUNTO DE VENTA CAJEROS",
+      "sucursalId": 1
     },
     {
       "id": 2,
-      "producto": "HORTALIZAS ( BROCOLI)",
-      "idunidad": 32,
-      "preciou": 0.4,
-      "idsucursal": 1,
-      "idpventa": 1
+      "codigoPuntoVenta": 1,
+      "nombrePuntoVenta": "CASTILLO DE LA GLORIETA",
+      "tipoPuntoVenta": "PUNTO DE VENTA CAJEROS",
+      "sucursalId": 2
     },
     {
       "id": 3,
-      "producto": "HORTALIZAS ( REMOLACHA)",
-      "idunidad": 50,
-      "preciou": 92,
-      "idsucursal": 1,
-      "idpventa": 1
+      "codigoPuntoVenta": 2,
+      "nombrePuntoVenta": "CENTRO INTERNACIONAL DE CONVENCIONES – CICC",
+      "tipoPuntoVenta": "PUNTO DE VENTA CAJEROS",
+      "sucursalId": 2
     },
     {
       "id": 4,
-      "producto": "HORTALIZAS ( ZANAHORIA)",
-      "idunidad": 50,
-      "preciou": 92,
-      "idsucursal": 1,
-      "idpventa": 1
+      "codigoPuntoVenta": 1,
+      "nombrePuntoVenta": "TIENDA CETUR",
+      "tipoPuntoVenta": "PUNTO DE VENTA CAJEROS",
+      "sucursalId": 3
     },
     {
       "id": 5,
-      "producto": "HORTALIZAS (LECHUGAS)",
-      "idunidad": 32,
-      "preciou": 0.4,
-      "idsucursal": 1,
-      "idpventa": 1
+      "codigoPuntoVenta": 2,
+      "nombrePuntoVenta": "MUSEO CETUR",
+      "tipoPuntoVenta": "PUNTO DE VENTA CAJEROS",
+      "sucursalId": 3
     },
     {
       "id": 6,
-      "producto": "LECHE DE VACA (LECHE DE VACA PURA)",
-      "idunidad": 48,
-      "preciou": 3.5,
-      "idsucursal": 1,
-      "idpventa": 1
+      "codigoPuntoVenta": 1,
+      "nombrePuntoVenta": "DESARROLLO PRODUCTIVO",
+      "tipoPuntoVenta": "PUNTO DE VENTA CAJEROS",
+      "sucursalId": 4
     },
     {
       "id": 7,
-      "producto": "MIEL ( MIEL DE ABEJA)",
-      "idunidad": 42,
-      "preciou": 26,
-      "idsucursal": 1,
-      "idpventa": 1
+      "codigoPuntoVenta": 2,
+      "nombrePuntoVenta": "PARQUELO LA MADONA",
+      "tipoPuntoVenta": "PUNTO DE VENTA CAJEROS",
+      "sucursalId": 4
     },
     {
       "id": 8,
-      "producto": "NARANJA ( NARANJA DE MESA)",
-      "idunidad": 3,
-      "preciou": 18,
-      "idsucursal": 1,
-      "idpventa": 1
+      "codigoPuntoVenta": 3,
+      "nombrePuntoVenta": "UNIDAD DE TRANSPORTE",
+      "tipoPuntoVenta": "PUNTO DE VENTA CAJEROS",
+      "sucursalId": 4
     },
     {
       "id": 9,
-      "producto": "PORCINO( CATEGORIA LECHON PROMEDIO DE 20 KILOS PESO VIVO, EN UNA CANTIDAD DE 25 CABEZAS POR SEMESTRE)",
-      "idunidad": 42,
-      "preciou": 7,
-      "idsucursal": 1,
-      "idpventa": 1
+      "codigoPuntoVenta": 4,
+      "nombrePuntoVenta": "DIRECCION DE MINERIA",
+      "tipoPuntoVenta": "PUNTO DE VENTA CAJEROS",
+      "sucursalId": 4
     },
     {
       "id": 10,
-      "producto": "TERNERO MACHO",
-      "idunidad": 31,
-      "preciou": 650,
-      "idsucursal": 1,
-      "idpventa": 1
-    },
-    {
-      "id": 11,
-      "producto": "TORO DE 3 AÑOS (TORETE DE 2 a 3 AÑOS)",
-      "idunidad": 31,
-      "preciou": 6500,
-      "idsucursal": 1,
-      "idpventa": 1
-    },
-    {
-      "id": 12,
-      "producto": "VACA ( VAQUILLA)",
-      "idunidad": 31,
-      "preciou": 1300,
-      "idsucursal": 1,
-      "idpventa": 1
-    },
-    {
-      "id": 13,
-      "producto": "VENTA DE LICOR DE NARANJA Y MANDARINA",
-      "idunidad": 48,
-      "preciou": 20,
-      "idsucursal": 1,
-      "idpventa": 1
-    },
-    {
-      "id": 14,
-      "producto": "VENTA DE NUCLEO DE ABEJAS",
-      "idunidad": 34,
-      "preciou": 300,
-      "idsucursal": 1,
-      "idpventa": 1
-    },
-    {
-      "id": 15,
-      "producto": "VENTA DE QUESO",
-      "idunidad": 42,
-      "preciou": 24,
-      "idsucursal": 1,
-      "idpventa": 1
-    },
-    {
-      "id": 16,
-      "producto": "VENTA DE YOGURT",
-      "idunidad": 48,
-      "preciou": 9,
-      "idsucursal": 1,
-      "idpventa": 1
-    },
-    {
-      "id": 17,
-      "producto": "EXTRANJEROS",
-      "idunidad": 28,
-      "preciou": 20,
-      "idsucursal": 2,
-      "idpventa": 2
-    },
-    {
-      "id": 18,
-      "producto": "NACIONALES Y CAMARA",
-      "idunidad": 28,
-      "preciou": 10,
-      "idsucursal": 2,
-      "idpventa": 2
-    },
-    {
-      "id": 19,
-      "producto": "NIÑOS ",
-      "idunidad": 28,
-      "preciou": 5,
-      "idsucursal": 2,
-      "idpventa": 2
-    },
-    {
-      "id": 20,
-      "producto": "AMBIENTE PARA ACREDITACION",
-      "idunidad": 22,
-      "preciou": 500,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 21,
-      "producto": "AULA ",
-      "idunidad": 22,
-      "preciou": 1000,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 22,
-      "producto": "COCINA A",
-      "idunidad": 22,
-      "preciou": 1000,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 23,
-      "producto": "COCINA B",
-      "idunidad": 22,
-      "preciou": 1000,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 24,
-      "producto": "COMPUTADORA PORTATIL",
-      "idunidad": 54,
-      "preciou": 400,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 25,
-      "producto": "CUCHARILLAS",
-      "idunidad": 37,
-      "preciou": 10,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 26,
-      "producto": "CUCHILLOS",
-      "idunidad": 37,
-      "preciou": 10,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 27,
-      "producto": "DATA DISPLAY",
-      "idunidad": 54,
-      "preciou": 480,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 28,
-      "producto": "ECRAN",
-      "idunidad": 54,
-      "preciou": 100,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 29,
-      "producto": "FALDONES",
-      "idunidad": 55,
-      "preciou": 70,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 30,
-      "producto": "IMPRESORA",
-      "idunidad": 54,
-      "preciou": 840,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 31,
-      "producto": "MANTELES",
-      "idunidad": 54,
-      "preciou": 5,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 32,
-      "producto": "MICROFONOS",
-      "idunidad": 54,
-      "preciou": 320,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 33,
-      "producto": "PLATILLOS",
-      "idunidad": 37,
-      "preciou": 10,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 34,
-      "producto": "PLATOS",
-      "idunidad": 37,
-      "preciou": 60,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 35,
-      "producto": "SALA DE CONFERENCIA",
-      "idunidad": 22,
-      "preciou": 500,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 36,
-      "producto": "SALA DE REUNIONES INDEPENDIENTES",
-      "idunidad": 22,
-      "preciou": 500,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 37,
-      "producto": "SALA PARA ADMINISTRACION",
-      "idunidad": 22,
-      "preciou": 500,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 38,
-      "producto": "SALA PARA SENADORES ",
-      "idunidad": 22,
-      "preciou": 4000,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 39,
-      "producto": "SALA PEQUEÑA DE REUNIONES BS ",
-      "idunidad": 22,
-      "preciou": 500,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 40,
-      "producto": "SALON \"B\" ",
-      "idunidad": 22,
-      "preciou": 8000,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 41,
-      "producto": "SALON A Y B COSTO POR CADA DIVISION",
-      "idunidad": 22,
-      "preciou": 2000,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 42,
-      "producto": "SALON A Y B COSTO POR DOS (2) DIVISIONES",
-      "idunidad": 22,
-      "preciou": 4000,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 43,
-      "producto": "SALON A Y B COSTO POR TRES (3) DIVISIONES",
-      "idunidad": 22,
-      "preciou": 6000,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 44,
-      "producto": "SALON PARA DIPUTADOS ",
-      "idunidad": 22,
-      "preciou": 5000,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 45,
-      "producto": "SALON PARA OFICINA",
-      "idunidad": 22,
-      "preciou": 500,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 46,
-      "producto": "SALON PLENARIO",
-      "idunidad": 22,
-      "preciou": 8000,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 47,
-      "producto": "SALON\" A \"",
-      "idunidad": 22,
-      "preciou": 8000,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 48,
-      "producto": "TENEDORES",
-      "idunidad": 37,
-      "preciou": 10,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 49,
-      "producto": "TENEDORES POSTREROS",
-      "idunidad": 37,
-      "preciou": 8,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 50,
-      "producto": "VASOS",
-      "idunidad": 37,
-      "preciou": 8,
-      "idsucursal": 2,
-      "idpventa": 3
-    },
-    {
-      "id": 51,
-      "producto": "AQSU DE PARED ",
-      "idunidad": 21,
-      "preciou": 780,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 52,
-      "producto": "Aretes ",
-      "idunidad": 44,
-      "preciou": 15,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 53,
-      "producto": "Aretes de la cultura Yampara",
-      "idunidad": 36,
-      "preciou": 12,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 54,
-      "producto": "ARETES TEJIDOS ",
-      "idunidad": 54,
-      "preciou": 25,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 55,
-      "producto": "ARETES TULLMAS",
-      "idunidad": 54,
-      "preciou": 8,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 56,
-      "producto": "BUFANDA",
-      "idunidad": 16,
-      "preciou": 180,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 57,
-      "producto": "BUFANDA",
-      "idunidad": 18,
-      "preciou": 200,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 58,
-      "producto": "BUFANDA",
-      "idunidad": 17,
-      "preciou": 180,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 59,
-      "producto": "BUFANDA",
-      "idunidad": 15,
-      "preciou": 90,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 60,
-      "producto": "BUFANDA",
-      "idunidad": 14,
-      "preciou": 70,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 61,
-      "producto": "BUFANDA LLAMERO",
-      "idunidad": 14,
-      "preciou": 70,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 62,
-      "producto": "CHUSPA ",
-      "idunidad": 8,
-      "preciou": 45,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 63,
-      "producto": "CHUMPI",
-      "idunidad": 7,
-      "preciou": 75,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 64,
-      "producto": "CHUSPA",
-      "idunidad": 46,
-      "preciou": 110,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 65,
-      "producto": "Llaveros de la cultura Jalqa",
-      "idunidad": 36,
-      "preciou": 15,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 66,
-      "producto": "Llaveros de la cultura Yampara",
-      "idunidad": 36,
-      "preciou": 18,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 67,
-      "producto": "MANILLA",
-      "idunidad": 24,
-      "preciou": 15,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 68,
-      "producto": "MANILLA",
-      "idunidad": 25,
-      "preciou": 15,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 69,
-      "producto": "MANILLA",
-      "idunidad": 23,
-      "preciou": 20,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 70,
-      "producto": "MANILLA",
-      "idunidad": 26,
-      "preciou": 25,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 71,
-      "producto": "MANILLA JALQA GRUESA",
-      "idunidad": 21,
-      "preciou": 25,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 72,
-      "producto": "MANILLA LILA YAMP",
-      "idunidad": 39,
-      "preciou": 20,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 73,
-      "producto": "Manillas acabadas ",
-      "idunidad": 43,
-      "preciou": 25,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 74,
-      "producto": "MANILLAS BLANCOY NEGRO",
-      "idunidad": 2,
-      "preciou": 90,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 75,
-      "producto": "MANILLAS GRUESAS ",
-      "idunidad": 38,
-      "preciou": 25,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 76,
-      "producto": "MANILLAS GRUESAS ",
-      "idunidad": 51,
-      "preciou": 20,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 77,
-      "producto": "MANILLAS TEJIDAS",
-      "idunidad": 40,
-      "preciou": 20,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 78,
-      "producto": "MANILLAS TEJIDAS",
-      "idunidad": 35,
-      "preciou": 15,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 79,
-      "producto": "MONEDEROS ",
-      "idunidad": 6,
-      "preciou": 75,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 80,
-      "producto": "MONEDEROS CUERO",
-      "idunidad": 6,
-      "preciou": 80,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 81,
-      "producto": "MONEDEROS HILADO",
-      "idunidad": 4,
-      "preciou": 90,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 82,
-      "producto": "ÑAJCHA CHUMPI",
-      "idunidad": 10,
-      "preciou": 55,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 83,
-      "producto": "ÑAJCHA CHUMPI",
-      "idunidad": 11,
-      "preciou": 55,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 84,
-      "producto": "PONCHO",
-      "idunidad": 1,
-      "preciou": 100,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 85,
-      "producto": "PORTA CELULAR",
-      "idunidad": 12,
-      "preciou": 35,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 86,
-      "producto": "PORTA CELULAR",
-      "idunidad": 5,
-      "preciou": 35,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 87,
-      "producto": "PORTA CELULAR",
-      "idunidad": 9,
-      "preciou": 35,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 88,
-      "producto": "PORTA CELULAR",
-      "idunidad": 13,
-      "preciou": 35,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 89,
-      "producto": "SAKA ",
-      "idunidad": 19,
-      "preciou": 196,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 90,
-      "producto": "SAKA ",
-      "idunidad": 20,
-      "preciou": 56,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 91,
-      "producto": "Saka de la cultura Jalqa",
-      "idunidad": 45,
-      "preciou": 180,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 92,
-      "producto": "Saka de la cultura Jalqa",
-      "idunidad": 47,
-      "preciou": 200,
-      "idsucursal": 3,
-      "idpventa": 4
-    },
-    {
-      "id": 93,
-      "producto": "CAMARA Y FOTOD",
-      "idunidad": 28,
-      "preciou": 5,
-      "idsucursal": 3,
-      "idpventa": 5
-    },
-    {
-      "id": 94,
-      "producto": "MAYORES",
-      "idunidad": 28,
-      "preciou": 10,
-      "idsucursal": 3,
-      "idpventa": 5
-    },
-    {
-      "id": 95,
-      "producto": "NIÑOS EXTRANJEROS",
-      "idunidad": 28,
-      "preciou": 5,
-      "idsucursal": 3,
-      "idpventa": 5
-    },
-    {
-      "id": 96,
-      "producto": "COSECHA DE TRIGO",
-      "idunidad": 41,
-      "preciou": 500,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 97,
-      "producto": "SERVICIO DE PESAJE EN BALANZA DE ALTO TONELAJE",
-      "idunidad": 53,
-      "preciou": 25,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 98,
-      "producto": "SERVICIO DE PROCESADO Y ACONDICIONADO DE MAIZ DE DIFERENTES VARIEDADES PARA SEMILLA DE LACATEGORIA REGISTRADA",
-      "idunidad": 52,
-      "preciou": 250,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 99,
-      "producto": "SERVICIO DE SEMBRADORA CON ABONADORA",
-      "idunidad": 41,
-      "preciou": 30,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 100,
-      "producto": "SERVICIO DE SUBSOLADOR CON CINCO REJAS",
-      "idunidad": 41,
-      "preciou": 30,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 101,
-      "producto": "SERVICIO DE TRACTOR CON IMPLEMENTOS(RASTRA, DESBROZADORA Y ARADO DE DISCO, ETC)",
-      "idunidad": 41,
-      "preciou": 210,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 102,
-      "producto": "SERVICIO DE TRACTOR GRANDE CON ROMPLAWP, RASTRA Y ARADO DE DISCO",
-      "idunidad": 41,
-      "preciou": 210,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 103,
-      "producto": "SERVICIO DE TRACTOR GRANDE CON SUBSOLADOR FR CINCO REJAS",
-      "idunidad": 41,
-      "preciou": 210,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 104,
-      "producto": "SERVICIO DE TRACTOR GRANDE Y SEMBRADORA CON ABONADORA",
-      "idunidad": 41,
-      "preciou": 220,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 105,
-      "producto": "SERVICIO DE TRACTOR MEDIANO CON DESGRANADORA DE MAIZ",
-      "idunidad": 50,
-      "preciou": 4,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 106,
-      "producto": "SERVICIO DE TRACTOR MEDIANO CON DESGRANADORA DE MAIZ TRILLADORA DE GRANO Y DESPICADORA DE MANI",
-      "idunidad": 50,
-      "preciou": 6,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 107,
-      "producto": "SERVICIO DE TRACTOR MEDIANO CON FUMIGADORA A TRACCION MOTRIZ",
-      "idunidad": 41,
-      "preciou": 160,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 108,
-      "producto": "VENTA DE AJI COMERCIAL EN VAINA DE DIFERENTES ECOTIPOS",
-      "idunidad": 27,
-      "preciou": 140,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 109,
-      "producto": "VENTA DE MAIZ EN GRANO DESCARTE DE DIFERENTES VARIEDADES",
-      "idunidad": 50,
-      "preciou": 40,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 110,
-      "producto": "VENTA DE MANI EN VAINA DESCARTE DE DIFERENTESVARIEDADES",
-      "idunidad": 50,
-      "preciou": 200,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 111,
-      "producto": "VENTA DE QUESO",
-      "idunidad": 42,
-      "preciou": 20,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 112,
-      "producto": "VENTA DE SEMILLA DE MAIZ CATEGORIA REGISTRADA, VARIEDAD IBO-128",
-      "idunidad": 29,
-      "preciou": 300,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 113,
-      "producto": "VENTA DE SEMILLA DE MANI CATEGORIA REGISTRADA I DE LAS VARIEDADES: COLORADO IBOPERE",
-      "idunidad": 30,
-      "preciou": 600,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 114,
-      "producto": "VENTA DE TORETES DESCARTES POR CARACTERISTICAS FENOTIPICAS NO DESEABLES PARA LA MULTIPLICACION(DESCARTES POR ELECCION)",
-      "idunidad": 54,
-      "preciou": 6.5,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 115,
-      "producto": "VENTA DE TORETES REPRODUCTORES MACHOS DE 2 AÑOS EN EL CENTRO EXPERIMENTAL EL SALVADOR",
-      "idunidad": 54,
-      "preciou": 4200,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 116,
-      "producto": "VENTA DE TOROS DESCARTES POR CARACTERISTICAS FENOTIPICAS NO DESEABLES PARALA MULTIPLICACION( DESCARTES POR ELECCION) Y CUMPLIO SU CICLO",
-      "idunidad": 54,
-      "preciou": 6.5,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 117,
-      "producto": "VENTA DE UVA BLANCA PARA BODEGA",
-      "idunidad": 50,
-      "preciou": 190,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 118,
-      "producto": "VENTA DE UVA DE MESA BLANCA NOSELECCIONADA (CAJA DE 25 KG)",
-      "idunidad": 33,
-      "preciou": 130,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 119,
-      "producto": "VENTA DE UVA DE MESA BLANCA SELECCIONADA (CAJA DE 25 KG)",
-      "idunidad": 33,
-      "preciou": 150,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 120,
-      "producto": "VENTA DE UVA DE MESA NEGRA NO SELECCIONADA (CAJA DE 25 KG)",
-      "idunidad": 33,
-      "preciou": 120,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 121,
-      "producto": "VENTA DE UVA DE MESANEGRA SELECCIONADA (CAJA DE 25 KG)",
-      "idunidad": 33,
-      "preciou": 130,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 122,
-      "producto": "VENTA DE UVA NEGRA PARA BODEGA",
-      "idunidad": 50,
-      "preciou": 160,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 123,
-      "producto": "VENTA DE VACAS DESCARTES POR PRESENTAR DIFERENTES PROBLEMAS QUE AFECTAN SU REPRODUCCION (EDAD,ENFERMEDADES)",
-      "idunidad": 54,
-      "preciou": 6.5,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 124,
-      "producto": "VENTA DE VAQUILLAS DESCARTES POR CARACTERISTICAS FENOTIPICAS NO DESEABLES PARA LA MULTIPLICACION(DESCARTE POR ELECCION)",
-      "idunidad": 54,
-      "preciou": 6.5,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 125,
-      "producto": "VENTA DE VAQUILLAS REPRODUCTORAS HEMBRAS DE 2 AÑOS EN EL CENTRO EXPERIMENTAL EL SALVADOR",
-      "idunidad": 54,
-      "preciou": 4200,
-      "idsucursal": 4,
-      "idpventa": 6
-    },
-    {
-      "id": 126,
-      "producto": "PARQUEO AUTOS",
-      "idunidad": 49,
-      "preciou": 5,
-      "idsucursal": 4,
-      "idpventa": 7
-    },
-    {
-      "id": 127,
-      "producto": "PARQUEO MOTOS",
-      "idunidad": 49,
-      "preciou": 2.5,
-      "idsucursal": 4,
-      "idpventa": 7
-    },
-    {
-      "id": 128,
-      "producto": "RENOVACION TARJETAS DE OPERACIÓN",
-      "idunidad": 54,
-      "preciou": 25,
-      "idsucursal": 4,
-      "idpventa": 8
-    },
-    {
-      "id": 129,
-      "producto": "RENOVACION TARJETAS DE OPERACIÓN",
-      "idunidad": 54,
-      "preciou": 40,
-      "idsucursal": 4,
-      "idpventa": 8
-    },
-    {
-      "id": 130,
-      "producto": "REPOSICION FORMULARIO 101",
-      "idunidad": 54,
-      "preciou": 5,
-      "idsucursal": 4,
-      "idpventa": 9
-    },
-    {
-      "razonSocial": "JOSEFO MENDOZA",
-      "nroDocumento": "1111111",
-      "tipoDoc": "NIT",
-      "id": 131
-    }
-  ],
-  "unidades": [
-    {
-      "id": 1,
-      "unidad_medida": "1 x 1.10 m"
-    },
-    {
-      "id": 2,
-      "unidad_medida": "1.85 x 85 cm"
-    },
-    {
-      "id": 3,
-      "unidad_medida": "100 UNIDADES"
-    },
-    {
-      "id": 4,
-      "unidad_medida": "11 X 12 cm"
-    },
-    {
-      "id": 5,
-      "unidad_medida": "11 x 7 cm"
-    },
-    {
-      "id": 6,
-      "unidad_medida": "12 x 12 cm"
-    },
-    {
-      "id": 7,
-      "unidad_medida": "120 x 4.5 cm"
-    },
-    {
-      "id": 8,
-      "unidad_medida": "13 x 12 cm"
-    },
-    {
-      "id": 9,
-      "unidad_medida": "13 x 8 cm"
-    },
-    {
-      "id": 10,
-      "unidad_medida": "130 x 4.5 cm"
-    },
-    {
-      "id": 11,
-      "unidad_medida": "131 x 4.5 cm"
-    },
-    {
-      "id": 12,
-      "unidad_medida": "14 x 7.4 cm"
-    },
-    {
-      "id": 13,
-      "unidad_medida": "14.5 x 8 cm"
-    },
-    {
-      "id": 14,
-      "unidad_medida": "160 x 15 cm"
-    },
-    {
-      "id": 15,
-      "unidad_medida": "185 x 15 cm"
-    },
-    {
-      "id": 16,
-      "unidad_medida": "260 x 15 cm"
-    },
-    {
-      "id": 17,
-      "unidad_medida": "265 x 15 cm"
-    },
-    {
-      "id": 18,
-      "unidad_medida": "275 x 15 cm"
-    },
-    {
-      "id": 19,
-      "unidad_medida": "37 x 22 cm"
-    },
-    {
-      "id": 20,
-      "unidad_medida": "69 x 39 cm"
-    },
-    {
-      "id": 21,
-      "unidad_medida": "74 x 54 cm"
-    },
-    {
-      "id": 22,
-      "unidad_medida": "AMBIENTE"
-    },
-    {
-      "id": 23,
-      "unidad_medida": "ANCHO 1 cm"
-    },
-    {
-      "id": 24,
-      "unidad_medida": "ANCHO 1.5 cm"
-    },
-    {
-      "id": 25,
-      "unidad_medida": "ANCHO 1.6 cm"
-    },
-    {
-      "id": 26,
-      "unidad_medida": "ANCHO 1.8 cm"
-    },
-    {
-      "id": 27,
-      "unidad_medida": "ARROBA"
-    },
-    {
-      "id": 28,
-      "unidad_medida": "BOLETO"
-    },
-    {
-      "id": 29,
-      "unidad_medida": "BOLSA DE 20 KG"
-    },
-    {
-      "id": 30,
-      "unidad_medida": "BOLSA DE 35 KG"
-    },
-    {
-      "id": 31,
-      "unidad_medida": "CABEZA"
-    },
-    {
-      "id": 32,
-      "unidad_medida": "CABEZAS"
-    },
-    {
-      "id": 33,
-      "unidad_medida": "CAJA"
-    },
-    {
-      "id": 34,
-      "unidad_medida": "COLONIA"
-    },
-    {
-      "id": 35,
-      "unidad_medida": "DELGADOS"
-    },
-    {
-      "id": 36,
-      "unidad_medida": "DIFERENTES TAMAÑOS"
-    },
-    {
-      "id": 37,
-      "unidad_medida": "DOCENA"
-    },
-    {
-      "id": 38,
-      "unidad_medida": "GRUESAS"
-    },
-    {
-      "id": 39,
-      "unidad_medida": "GRUESAS TUPIDO"
-    },
-    {
-      "id": 40,
-      "unidad_medida": "GRUESOS"
-    },
-    {
-      "id": 41,
-      "unidad_medida": "HECTÁREA"
-    },
-    {
-      "id": 42,
-      "unidad_medida": "KILOGRAMOS"
-    },
-    {
-      "id": 43,
-      "unidad_medida": "L18 A3"
-    },
-    {
-      "id": 44,
-      "unidad_medida": "L4A3"
-    },
-    {
-      "id": 45,
-      "unidad_medida": "LARGO 16cm ANCHO 21cm"
-    },
-    {
-      "id": 46,
-      "unidad_medida": "LARGO 19cm* ANCHO15cm"
-    },
-    {
-      "id": 47,
-      "unidad_medida": "LARGO 30cm ANCHO 23cm"
-    },
-    {
-      "id": 48,
-      "unidad_medida": "LITROS"
-    },
-    {
-      "id": 49,
-      "unidad_medida": "LUGAR"
-    },
-    {
-      "id": 50,
-      "unidad_medida": "QUINTALES"
-    },
-    {
-      "id": 51,
-      "unidad_medida": "TODO TAMAÑO GRUESAS"
-    },
-    {
-      "id": 52,
-      "unidad_medida": "TONELADA EN BRUTO"
-    },
-    {
-      "id": 53,
-      "unidad_medida": "TONELADA PESO BRUTO Y TARA"
-    },
-    {
-      "id": 54,
-      "unidad_medida": "UNIDAD"
-    },
-    {
-      "id": 55,
-      "unidad_medida": "UNIDAD DE 10 METROS"
+      "codigoPuntoVenta": 1,
+      "nombrePuntoVenta": "DEPORTES",
+      "tipoPuntoVenta": "PUNTO DE VENTA CAJEROS",
+      "sucursalId": 5
     }
   ],
   "usuarios": [
     {
-      "id": 2,
-      "usuario": "p.correa@yahho.com",
-      "password": "1x2x3x",
-      "nombre": "Pamela Correa",
-      "nivel": 2
-    },
-    {
-      "id": 4,
-      "usuario": "juan1577@hotmail.com",
-      "password": "654321",
-      "nombre": "Juan José Carrasco Poveda",
-      "nivel": 2
-    },
-    {
       "id": 1,
-      "usuario": "mendoza@gmail.com",
+      "usuario": "jose.mendoza",
       "password": "123",
       "nombre": "José Mendoza Vargas",
       "nivel": 1
     },
     {
-      "id": 5,
-      "usuario": "p.correa",
-      "password": "654321",
-      "nombre": "Pamela Correa",
-      "nivel": 2
-    },
-    {
-      "id": 7,
-      "usuario": "p.correa@yahhho.com",
-      "password": "123456789",
-      "nombre": "josefo mendoza",
-      "nivel": 1
-    },
-    {
-      "id": 8,
-      "usuario": "p2.correa@yahho.com",
-      "password": "1x2x3x",
-      "nombre": "JOSEFO MENDOZA",
-      "nivel": 2
-    },
-    {
-      "id": 9,
-      "usuario": "p13213.correa@yahho.com",
-      "password": "111111111",
-      "nombre": "JOse mendoza",
-      "nivel": 2
-    },
-    {
-      "id": 10,
-      "usuario": "jjc.correa@yahho.com",
-      "password": "111111",
-      "nombre": "Juan jose carrasco poveda",
-      "nivel": 2
-    },
-    {
       "id": 12,
-      "usuario": "juanco@gamail.com",
+      "usuario": "juan.carrasco",
       "password": "111111",
       "nombre": "juan jose carrasco",
       "nivel": 1
-    },
-    {
-      "usuario": "mario@mail.com",
-      "password": "654321",
-      "nombre": "Mario Campos",
-      "nivel": "2",
-      "id": 13
     }
   ],
   "rolpermisos": [
@@ -1492,6 +196,516 @@
     {
       "id": 9,
       "permiso": "canUsuario"
+    }
+  ],
+  "ventas": [
+    {
+      "id": 1,
+      "razonSocial": "CARLOS MEDINA GONZALEZ",
+      "fechaHora": "2021-07-08T14:24:37Z",
+      "monto": 765.336585146133,
+      "nroDocumento": "5322011",
+      "estado": false,
+      "puntoVentaId": 8
+    },
+    {
+      "id": 2,
+      "razonSocial": "CESSA",
+      "fechHora": "2022-09-21T15:25:05.598Z",
+      "monto": 360,
+      "nroDocumento": "22222",
+      "estado": true,
+      "puntoVentaId": 1
+    },
+    {
+      "id": 3,
+      "razonSocial": "CESSA",
+      "fechHora": "2022-09-21T16:42:56.639Z",
+      "monto": 92.4,
+      "nroDocumento": "22222",
+      "estado": true,
+      "puntoVentaId": 1
+    },
+    {
+      "id": 4,
+      "razonSocial": "MARCELO ROBLES",
+      "fechHora": "2022-09-21T16:58:53.582Z",
+      "monto": 269.48,
+      "nroDocumento": "33333",
+      "estado": true,
+      "puntoVentaId": 1
+    },
+    {
+      "id": 5,
+      "razonSocial": "MARCELO ROBLES",
+      "fechHora": "2022-09-21T17:04:01.208Z",
+      "monto": 87,
+      "nroDocumento": "33333",
+      "estado": true,
+      "puntoVentaId": 1
+    },
+    {
+      "id": 6,
+      "razonSocial": "MARCELO ROBLES",
+      "fechHora": "2022-09-21T17:06:11.150Z",
+      "monto": 19530,
+      "nroDocumento": "33333",
+      "estado": true,
+      "puntoVentaId": 1
+    },
+    {
+      "id": 7,
+      "razonSocial": "MARCELO SALINAS",
+      "fechHora": "2022-09-22T17:14:18.944Z",
+      "monto": 37.7,
+      "nroDocumento": "33333",
+      "estado": true,
+      "puntoVentaId": 1
+    },
+    {
+      "id": 8,
+      "razonSocial": "MARCELO ROBLES",
+      "fechHora": "2022-09-22T17:41:33.369Z",
+      "monto": 106.02,
+      "nroDocumento": "33333",
+      "estado": true,
+      "puntoVentaId": 1
+    },
+    {
+      "id": 9,
+      "razonSocial": "MARCELO ROBLES",
+      "fechHora": "2022-09-22T18:01:44.255Z",
+      "monto": 114,
+      "nroDocumento": "33333",
+      "estado": true,
+      "puntoVentaId": 1
+    },
+    {
+      "id": 10,
+      "razonSocial": "MARCELO ROBLES",
+      "fechHora": "2022-09-22T18:03:28.752Z",
+      "monto": 571.36,
+      "nroDocumento": "33333",
+      "estado": true,
+      "puntoVentaId": 1
+    },
+    {
+      "id": 11,
+      "razonSocial": "MARCELO ROBLES",
+      "fechHora": "2022-09-22T18:05:34.976Z",
+      "monto": 69.78,
+      "nroDocumento": "33333",
+      "estado": true,
+      "puntoVentaId": 1
+    },
+    {
+      "id": 12,
+      "razonSocial": "MARCELO ROBLES",
+      "fechHora": "2022-09-22T18:08:35.713Z",
+      "monto": 60,
+      "nroDocumento": "33333",
+      "estado": true,
+      "puntoVentaId": 1
+    }
+  ],
+  "razonSocial": [
+    {
+      "id": 1,
+      "razonSocial": "MARIA GONZALEZ GOMEZ",
+      "nroDocumento": "3660939",
+      "tipoDoc": "NIT"
+    },
+    {
+      "razonSocial": "CESSA",
+      "nroDocumento": "22222",
+      "tipoDoc": "NIT",
+      "id": 2
+    },
+    {
+      "razonSocial": "MARCELO ROBLES",
+      "nroDocumento": "33333",
+      "tipoDoc": "CEDULA",
+      "id": 3
+    },
+    {
+      "razonSocial": "MARCELO SALINAS",
+      "nroDocumento": "33333",
+      "tipoDoc": "NIT",
+      "id": 4
+    },
+    {
+      "razonSocial": "MARIBEL LOPEZ",
+      "nroDocumento": "666666",
+      "tipoDoc": "CEDULA",
+      "id": 5
+    }
+  ],
+  "productos": [
+    {"id": 1, "producto": "HORTALIZAS ( ARVEJAS )", "unidad": "ARROBA", "precioMinimo": 30, "precioMaximo": 40, "sucursalId": 1, "puntoVentaId": 1}, 
+    {"id": 2, "producto": "HORTALIZAS ( BROCOLI )", "unidad": "CABEZAS", "precioMinimo": 0.4, "precioMaximo": 8, "sucursalId": 1, "puntoVentaId": 1}, 
+    {"id": 3, "producto": "HORTALIZAS ( REMOLACHA )", "unidad": "QUINTALES", "precioMinimo": 92, "precioMaximo": 138, "sucursalId": 1, "puntoVentaId": 1}, 
+    {"id": 4, "producto": "HORTALIZAS ( ZANAHORIA )", "unidad": "QUINTALES", "precioMinimo": 92, "precioMaximo": 138, "sucursalId": 1, "puntoVentaId": 1}, 
+    {"id": 5, "producto": "HORTALIZAS (LECHUGAS)", "unidad": "CABEZAS", "precioMinimo": 0.4, "precioMaximo": 0.8, "sucursalId": 1, "puntoVentaId": 1}, 
+    {"id": 6, "producto": "LECHE DE VACA (LECHE DE VACA PURA)", "unidad": "LITROS", "precioMinimo": 3.5, "precioMaximo": 4, "sucursalId": 1, "puntoVentaId": 1}, 
+    {"id": 7, "producto": "MIEL ( MIEL DE ABEJA)", "unidad": "KILOGRAMOS", "precioMinimo": 26, "precioMaximo": 30, "sucursalId": 1, "puntoVentaId": 1}, 
+    {"id": 8, "producto": "NARANJA ( NARANJA DE MESA)", "unidad": "100 UNIDADES", "precioMinimo": 18, "precioMaximo": 22, "sucursalId": 1, "puntoVentaId": 1}, 
+    {"id": 9, "producto": "PORCINO( CATEGORIA LECHON PROMEDIO DE 20 KILOS PESO VIVO, EN UNA CANTIDAD DE 25 CABEZAS POR SEMESTRE)", "unidad": "KILOGRAMOS", "precioMinimo": 7, "precioMaximo": 8, "sucursalId": 1, "puntoVentaId": 1}, 
+    {"id": 10, "producto": "TERNERO MACHO", "unidad": "CABEZA", "precioMinimo": 650, "precioMaximo": 900, "sucursalId": 1, "puntoVentaId": 1}, 
+    {"id": 11, "producto": "TORO DE 3 AÑOS (TORETE DE 2 a 3 AÑOS)", "unidad": "CABEZA", "precioMinimo": 6500, "precioMaximo": 6500, "sucursalId": 1, "puntoVentaId": 1}, 
+    {"id": 12, "producto": "VACA ( VAQUILLA)", "unidad": "CABEZA", "precioMinimo": 1300, "precioMaximo": 1800, "sucursalId": 1, "puntoVentaId": 1}, 
+    {"id": 13, "producto": "VENTA DE LICOR DE NARANJA Y MANDARINA", "unidad": "LITROS", "precioMinimo": 20, "precioMaximo": 25, "sucursalId": 1, "puntoVentaId": 1}, 
+    {"id": 14, "producto": "VENTA DE NUCLEO DE ABEJAS", "unidad": "COLONIA", "precioMinimo": 300, "precioMaximo": 320, "sucursalId": 1, "puntoVentaId": 1}, 
+    {"id": 15, "producto": "VENTA DE QUESO", "unidad": "KILOGRAMOS", "precioMinimo": 24, "precioMaximo": 26, "sucursalId": 1, "puntoVentaId": 1}, 
+    {"id": 16, "producto": "VENTA DE YOGURT", "unidad": "LITROS", "precioMinimo": 9, "precioMaximo": 10, "sucursalId": 1, "puntoVentaId": 1}, 
+    {"id": 17, "producto": "EXTRANJEROS", "unidad": "BOLETO", "precioMinimo": 20, "precioMaximo": 20, "sucursalId": 2, "puntoVentaId": 2}, 
+    {"id": 18, "producto": "NACIONALES Y CAMARA", "unidad": "BOLETO", "precioMinimo": 10, "precioMaximo": 10, "sucursalId": 2, "puntoVentaId": 2}, 
+    {"id": 19, "producto": "NIÑOS ", "unidad": "BOLETO", "precioMinimo": 5, "precioMaximo": 5, "sucursalId": 2, "puntoVentaId": 2}, 
+    {"id": 20, "producto": "AMBIENTE PARA ACREDITACION", "unidad": "AMBIENTE", "precioMinimo": 500, "precioMaximo": 500, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 21, "producto": "AULA ", "unidad": "AMBIENTE", "precioMinimo": 1000, "precioMaximo": 1000, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 22, "producto": "COCINA A", "unidad": "AMBIENTE", "precioMinimo": 1000, "precioMaximo": 1000, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 23, "producto": "COCINA B", "unidad": "AMBIENTE", "precioMinimo": 1000, "precioMaximo": 1000, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 24, "producto": "COMPUTADORA PORTATIL", "unidad": "UNIDAD", "precioMinimo": 400, "precioMaximo": 400, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 25, "producto": "CUCHARILLAS", "unidad": "DOCENA", "precioMinimo": 10, "precioMaximo": 10, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 26, "producto": "CUCHILLOS", "unidad": "DOCENA", "precioMinimo": 10, "precioMaximo": 10, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 27, "producto": "DATA DISPLAY", "unidad": "UNIDAD", "precioMinimo": 480, "precioMaximo": 480, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 28, "producto": "ECRAN", "unidad": "UNIDAD", "precioMinimo": 100, "precioMaximo": 100, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 29, "producto": "FALDONES", "unidad": "UNIDAD DE 10 METROS", "precioMinimo": 70, "precioMaximo": 70, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 30, "producto": "IMPRESORA", "unidad": "UNIDAD", "precioMinimo": 840, "precioMaximo": 840, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 31, "producto": "MANTELES", "unidad": "UNIDAD", "precioMinimo": 5, "precioMaximo": 5, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 32, "producto": "MICROFONOS", "unidad": "UNIDAD", "precioMinimo": 320, "precioMaximo": 320, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 33, "producto": "PLATILLOS", "unidad": "DOCENA", "precioMinimo": 10, "precioMaximo": 10, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 34, "producto": "PLATOS", "unidad": "DOCENA", "precioMinimo": 60, "precioMaximo": 60, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 35, "producto": "SALA DE CONFERENCIA", "unidad": "AMBIENTE", "precioMinimo": 500, "precioMaximo": 500, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 36, "producto": "SALA DE REUNIONES INDEPENDIENTES", "unidad": "AMBIENTE", "precioMinimo": 500, "precioMaximo": 500, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 37, "producto": "SALA PARA ADMINISTRACION", "unidad": "AMBIENTE", "precioMinimo": 500, "precioMaximo": 500, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 38, "producto": "SALA PARA SENADORES ", "unidad": "AMBIENTE", "precioMinimo": 4000, "precioMaximo": 4000, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 39, "producto": "SALA PEQUEÑA DE REUNIONES BS ", "unidad": "AMBIENTE", "precioMinimo": 500, "precioMaximo": 500, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 40, "producto": "SALON B ", "unidad": "AMBIENTE", "precioMinimo": 8000, "precioMaximo": 8000, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 41, "producto": "SALON A Y B COSTO POR CADA DIVISION", "unidad": "AMBIENTE", "precioMinimo": 2000, "precioMaximo": 2000, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 42, "producto": "SALON A Y B COSTO POR DOS (2) DIVISIONES", "unidad": "AMBIENTE", "precioMinimo": 4000, "precioMaximo": 4000, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 43, "producto": "SALON A Y B COSTO POR TRES (3) DIVISIONES", "unidad": "AMBIENTE", "precioMinimo": 6000, "precioMaximo": 6000, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 44, "producto": "SALON PARA DIPUTADOS ", "unidad": "AMBIENTE", "precioMinimo": 5000, "precioMaximo": 5000, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 45, "producto": "SALON PARA OFICINA", "unidad": "AMBIENTE", "precioMinimo": 500, "precioMaximo": 500, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 46, "producto": "SALON PLENARIO", "unidad": "AMBIENTE", "precioMinimo": 8000, "precioMaximo": 8000, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 47, "producto": "SALON A", "unidad": "AMBIENTE", "precioMinimo": 8000, "precioMaximo": 8000, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 48, "producto": "TENEDORES", "unidad": "DOCENA", "precioMinimo": 10, "precioMaximo": 10, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 49, "producto": "TENEDORES POSTREROS", "unidad": "DOCENA", "precioMinimo": 8, "precioMaximo": 8, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 50, "producto": "VASOS", "unidad": "DOCENA", "precioMinimo": 8, "precioMaximo": 8, "sucursalId": 2, "puntoVentaId": 3}, 
+    {"id": 51, "producto": "AQSU DE PARED ", "unidad": "74 x 54 cm", "precioMinimo": 780, "precioMaximo": 780, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 52, "producto": "Aretes ", "unidad": "L4A3", "precioMinimo": 15, "precioMaximo": 15, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 53, "producto": "Aretes de la cultura Yampara", "unidad": "DIFERENTES TAMAÑOS", "precioMinimo": 12, "precioMaximo": 12, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 54, "producto": "ARETES TEJIDOS ", "unidad": "UNIDAD", "precioMinimo": 25, "precioMaximo": 25, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 55, "producto": "ARETES TULLMAS", "unidad": "UNIDAD", "precioMinimo": 8, "precioMaximo": 8, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 56, "producto": "BUFANDA", "unidad": "260 x 15 cm", "precioMinimo": 180, "precioMaximo": 180, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 57, "producto": "BUFANDA", "unidad": "275 x 15 cm", "precioMinimo": 200, "precioMaximo": 200, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 58, "producto": "BUFANDA", "unidad": "265 x 15 cm", "precioMinimo": 180, "precioMaximo": 180, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 59, "producto": "BUFANDA", "unidad": "185 x 15 cm", "precioMinimo": 90, "precioMaximo": 90, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 60, "producto": "BUFANDA", "unidad": "160 x 15 cm", "precioMinimo": 70, "precioMaximo": 70, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 61, "producto": "BUFANDA LLAMERO", "unidad": "160 x 15 cm", "precioMinimo": 70, "precioMaximo": 70, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 62, "producto": "CHUSPA ", "unidad": "13 x 12 cm", "precioMinimo": 45, "precioMaximo": 45, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 63, "producto": "CHUMPI", "unidad": "120 x 4.5 cm", "precioMinimo": 75, "precioMaximo": 75, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 64, "producto": "CHUSPA", "unidad": "LARGO 19cm* ANCHO15cm", "precioMinimo": 110, "precioMaximo": 110, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 65, "producto": "Llaveros de la cultura Jalqa", "unidad": "DIFERENTES TAMAÑOS", "precioMinimo": 15, "precioMaximo": 15, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 66, "producto": "Llaveros de la cultura Yampara", "unidad": "DIFERENTES TAMAÑOS", "precioMinimo": 18, "precioMaximo": 18, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 67, "producto": "MANILLA", "unidad": "ANCHO 1.5 cm", "precioMinimo": 15, "precioMaximo": 15, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 68, "producto": "MANILLA", "unidad": "ANCHO 1.6 cm", "precioMinimo": 15, "precioMaximo": 15, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 69, "producto": "MANILLA", "unidad": "ANCHO 1 cm", "precioMinimo": 20, "precioMaximo": 20, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 70, "producto": "MANILLA", "unidad": "ANCHO 1.8 cm", "precioMinimo": 25, "precioMaximo": 25, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 71, "producto": "MANILLA JALQA GRUESA", "unidad": "74 x 54 cm", "precioMinimo": 25, "precioMaximo": 25, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 72, "producto": "MANILLA LILA YAMP", "unidad": "GRUESAS TUPIDO", "precioMinimo": 20, "precioMaximo": 20, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 73, "producto": "Manillas acabadas ", "unidad": "L18 A3", "precioMinimo": 25, "precioMaximo": 25, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 74, "producto": "MANILLAS BLANCOY NEGRO", "unidad": "1.85 x 85 cm", "precioMinimo": 90, "precioMaximo": 90, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 75, "producto": "MANILLAS GRUESAS ", "unidad": "GRUESAS", "precioMinimo": 25, "precioMaximo": 25, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 76, "producto": "MANILLAS GRUESAS ", "unidad": "TODO TAMAÑO GRUESAS", "precioMinimo": 20, "precioMaximo": 20, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 77, "producto": "MANILLAS TEJIDAS", "unidad": "GRUESOS", "precioMinimo": 20, "precioMaximo": 20, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 78, "producto": "MANILLAS TEJIDAS", "unidad": "DELGADOS", "precioMinimo": 15, "precioMaximo": 15, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 79, "producto": "MONEDEROS ", "unidad": "12 x 12 cm", "precioMinimo": 75, "precioMaximo": 75, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 80, "producto": "MONEDEROS CUERO", "unidad": "12 x 12 cm", "precioMinimo": 80, "precioMaximo": 80, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 81, "producto": "MONEDEROS HILADO", "unidad": "11 X 12 cm", "precioMinimo": 90, "precioMaximo": 90, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 82, "producto": "ÑAJCHA CHUMPI", "unidad": "130 x 4.5 cm", "precioMinimo": 55, "precioMaximo": 55, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 83, "producto": "ÑAJCHA CHUMPI", "unidad": "131 x 4.5 cm", "precioMinimo": 55, "precioMaximo": 55, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 84, "producto": "PONCHO", "unidad": "1 x 1.10 M", "precioMinimo": 100, "precioMaximo": 100, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 85, "producto": "PORTA CELULAR", "unidad": "14 x 7.4 cm", "precioMinimo": 35, "precioMaximo": 35, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 86, "producto": "PORTA CELULAR", "unidad": "11 x 7 cm", "precioMinimo": 35, "precioMaximo": 35, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 87, "producto": "PORTA CELULAR", "unidad": "13 x 8 cm", "precioMinimo": 35, "precioMaximo": 35, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 88, "producto": "PORTA CELULAR", "unidad": "14.5 x 8 cm", "precioMinimo": 35, "precioMaximo": 35, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 89, "producto": "SAKA ", "unidad": "37 x 22 cm", "precioMinimo": 196, "precioMaximo": 196, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 90, "producto": "SAKA ", "unidad": "69 x 39 cm", "precioMinimo": 56, "precioMaximo": 56, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 91, "producto": "SAKA DE LA CULTURA JALKA", "unidad": "LARGO 16cm ANCHO 21cm", "precioMinimo": 180, "precioMaximo": 180, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 92, "producto": "SAKA DE LA CULTURA JALKA", "unidad": "LARGO 30cm ANCHO 23cm", "precioMinimo": 200, "precioMaximo": 200, "sucursalId": 3, "puntoVentaId": 4}, 
+    {"id": 93, "producto": "CAMARA Y FOTOD", "unidad": "BOLETO", "precioMinimo": 5, "precioMaximo": 5, "sucursalId": 3, "puntoVentaId": 5}, 
+    {"id": 94, "producto": "MAYORES", "unidad": "BOLETO", "precioMinimo": 10, "precioMaximo": 10, "sucursalId": 3, "puntoVentaId": 5}, 
+    {"id": 95, "producto": "NIÑOS EXTRANJEROS", "unidad": "BOLETO", "precioMinimo": 5, "precioMaximo": 5, "sucursalId": 3, "puntoVentaId": 5}, 
+    {"id": 96, "producto": "COSECHA DE TRIGO", "unidad": "HECTAREA", "precioMinimo": 500, "precioMaximo": 500, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 97, "producto": "SERVICIO DE PESAJE EN BALANZA DE ALTO TONELAJE", "unidad": "TONELADAPESO BRUTO Y TARA", "precioMinimo": 25, "precioMaximo": 25, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 98, "producto": "SERVICIO DE PROCESADO Y ACONDICIONADO DE MAIZ DE DIFERENTES VARIEDADES PARA SEMILLA DE LACATEGORIA REGISTRADA", "unidad": "TONELADA EN BRUTO", "precioMinimo": 250, "precioMaximo": 250, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 99, "producto": "SERVICIO DE SEMBRADORA CON ABONADORA", "unidad": "HECTAREA", "precioMinimo": 30, "precioMaximo": 30, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 100, "producto": "SERVICIO DE SUBSOLADOR CON CINCO REJAS", "unidad": "HECTAREA", "precioMinimo": 30, "precioMaximo": 30, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 101, "producto": "SERVICIO DE TRACTOR CON IMPLEMENTOS(RASTRA, DESBROZADORA Y ARADO DE DISCO, ETC)", "unidad": "HECTAREA", "precioMinimo": 210, "precioMaximo": 210, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 102, "producto": "SERVICIO DE TRACTOR GRANDE CON ROMPLAWP, RASTRA Y ARADO DE DISCO", "unidad": "HECTAREA", "precioMinimo": 210, "precioMaximo": 210, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 103, "producto": "SERVICIO DE TRACTOR GRANDE CON SUBSOLADOR FR CINCO REJAS", "unidad": "HECTAREA", "precioMinimo": 210, "precioMaximo": 210, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 104, "producto": "SERVICIO DE TRACTOR GRANDE Y SEMBRADORA CON ABONADORA", "unidad": "HECTAREA", "precioMinimo": 220, "precioMaximo": 220, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 105, "producto": "SERVICIO DE TRACTOR MEDIANO CON DESGRANADORA DE MAIZ", "unidad": "QUINTALES", "precioMinimo": 4, "precioMaximo": 4, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 106, "producto": "SERVICIO DE TRACTOR MEDIANO CON DESGRANADORA DE MAIZ TRILLADORA DE GRANO Y DESPICADORA DE MANI", "unidad": "QUINTALES", "precioMinimo": 6, "precioMaximo": 6, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 107, "producto": "SERVICIO DE TRACTOR MEDIANO CON FUMIGADORA A TRACCION MOTRIZ", "unidad": "HECTAREA", "precioMinimo": 160, "precioMaximo": 160, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 108, "producto": "VENTA DE AJI COMERCIAL EN VAINA DE DIFERENTES ECOTIPOS", "unidad": "ARROBA", "precioMinimo": 140, "precioMaximo": 140, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 109, "producto": "VENTA DE MAIZ EN GRANO DESCARTE DE DIFERENTES VARIEDADES", "unidad": "QUINTALES", "precioMinimo": 40, "precioMaximo": 40, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 110, "producto": "VENTA DE MANI EN VAINA DESCARTE DE DIFERENTESVARIEDADES", "unidad": "QUINTALES", "precioMinimo": 200, "precioMaximo": 200, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 111, "producto": "VENTA DE QUESO", "unidad": "KILOGRAMOS", "precioMinimo": 20, "precioMaximo": 20, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 112, "producto": "VENTA DE SEMILLA DE MAIZ CATEGORIA REGISTRADA, VARIEDAD IBO-128", "unidad": "BOLSA DE 20 KG", "precioMinimo": 300, "precioMaximo": 300, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 113, "producto": "VENTA DE SEMILLA DE MANI CATEGORIA REGISTRADA I DE LAS VARIEDADES: COLORADO IBOPERE", "unidad": "BOLSA DE 35 KG", "precioMinimo": 600, "precioMaximo": 600, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 114, "producto": "VENTA DE TORETES DESCARTES POR CARACTERISTICAS FENOTIPICAS NO DESEABLES PARA LA MULTIPLICACION(DESCARTES POR ELECCION)", "unidad": "UNIDAD", "precioMinimo": 6.5, "precioMaximo": 6.5, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 115, "producto": "VENTA DE TORETES REPRODUCTORES MACHOS DE 2 AÑOS EN EL CENTRO EXPERIMENTAL EL SALVADOR", "unidad": "UNIDAD", "precioMinimo": 4200, "precioMaximo": 4200, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 116, "producto": "VENTA DE TOROS DESCARTES POR CARACTERISTICAS FENOTIPICAS NO DESEABLES PARALA MULTIPLICACION( DESCARTES POR ELECCION) Y CUMPLIO SU CICLO", "unidad": "UNIDAD", "precioMinimo": 6.5, "precioMaximo": 6.5, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 117, "producto": "VENTA DE UVA BLANCA PARA BODEGA", "unidad": "QUINTALES", "precioMinimo": 190, "precioMaximo": 190, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 118, "producto": "VENTA DE UVA DE MESA BLANCA NOSELECCIONADA (CAJA DE 25 KG)", "unidad": "CAJA", "precioMinimo": 130, "precioMaximo": 130, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 119, "producto": "VENTA DE UVA DE MESA BLANCA SELECCIONADA (CAJA DE 25 KG)", "unidad": "CAJA", "precioMinimo": 150, "precioMaximo": 150, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 120, "producto": "VENTA DE UVA DE MESA NEGRA NO SELECCIONADA (CAJA DE 25 KG)", "unidad": "CAJA", "precioMinimo": 120, "precioMaximo": 120, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 121, "producto": "VENTA DE UVA DE MESANEGRA SELECCIONADA (CAJA DE 25 KG)", "unidad": "CAJA", "precioMinimo": 130, "precioMaximo": 130, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 122, "producto": "VENTA DE UVA NEGRA PARA BODEGA", "unidad": "QUINTALES", "precioMinimo": 160, "precioMaximo": 160, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 123, "producto": "VENTA DE VACAS DESCARTES POR PRESENTAR DIFERENTES PROBLEMAS QUE AFECTAN SU REPRODUCCION (EDAD,ENFERMEDADES)", "unidad": "UNIDAD", "precioMinimo": 6.5, "precioMaximo": 6.5, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 124, "producto": "VENTA DE VAQUILLAS DESCARTES POR CARACTERISTICAS FENOTIPICAS NO DESEABLES PARA LA MULTIPLICACION(DESCARTE POR ELECCION)", "unidad": "UNIDAD", "precioMinimo": 6.5, "precioMaximo": 6.5, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 125, "producto": "VENTA DE VAQUILLAS REPRODUCTORAS HEMBRAS DE 2 AÑOS EN EL CENTRO EXPERIMENTAL EL SALVADOR", "unidad": "UNIDAD", "precioMinimo": 4200, "precioMaximo": 4200, "sucursalId": 4, "puntoVentaId": 6}, 
+    {"id": 126, "producto": "PARQUEO AUTOS", "unidad": "LUGAR", "precioMinimo": 5, "precioMaximo": 5, "sucursalId": 4, "puntoVentaId": 7}, 
+    {"id": 127, "producto": "PARQUEO MOTOS", "unidad": "LUGAR", "precioMinimo": 2.5, "precioMaximo": 2.5, "sucursalId": 4, "puntoVentaId": 7}, 
+    {"id": 128, "producto": "RENOVACION TARJETAS DE OPERACIÓN - 1", "unidad": "UNIDAD", "precioMinimo": 25, "precioMaximo": 25, "sucursalId": 4, "puntoVentaId": 8}, 
+    {"id": 129, "producto": "RENOVACION TARJETAS DE OPERACIÓN - 2", "unidad": "UNIDAD", "precioMinimo": 40, "precioMaximo": 40, "sucursalId": 4, "puntoVentaId": 8}, 
+    {"id": 130, "producto": "REPOSICION FORMULARIO 101", "unidad": "UNIDAD", "precioMinimo": 5, "precioMaximo": 5, "sucursalId": 4, "puntoVentaId": 9}, 
+    {"id": 131, "producto": "DIA - ESTADIO PATRIA DEL OVALO CENTRAL (D1) PERSONAS PARTICULARES", "unidad": "PIEZA", "precioMinimo": 350, "precioMaximo": 350, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 132, "producto": "DIA - ESTADIO PATRIA DEL OVALO CENTRAL (D1) EQUIPOS NACIONALES DEL FUTBOL PROFESIONAL PARA ENTRENAMIENTO", "unidad": "PIEZA", "precioMinimo": 700, "precioMaximo": 700, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 133, "producto": "DIA - ESTADIO PATRIA DEL OVALO CENTRAL (D1) EQUIPOS EXTRANJEROS DE FUTBOL PROFESIONAL PARA ENTRENAMIENTO", "unidad": "PIEZA", "precioMinimo": 1400, "precioMaximo": 1400, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 134, "producto": "DIA - ESTADIO PATRIA DEL OVALO CENTRAL (D1) PARTIDOS DE LA FEDERACION DE FUBOL NO PROFESIONAL", "unidad": "PIEZA", "precioMinimo": 400, "precioMaximo": 400, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 135, "producto": "DIA - ESTADIO PATRIA DEL OVALO CENTRAL (D1) PARTIDOS DE LA ASOCIACION DEPARTAMENTAL DE FUTBOL", "unidad": "PIEZA", "precioMinimo": 175, "precioMaximo": 175, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 136, "producto": "DIA - ESTADIO PATRIA CANCHA AUXILIAR (D1) PERSONAS PARTICULARES", "unidad": "PIEZA", "precioMinimo": 200, "precioMaximo": 200, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 137, "producto": "DIA - ESTADIO PATRIA CANCHA AUXILIAR (D1) EUIPOS NACIONALES DE FUTBOL PROFESIONAL", "unidad": "PIEZA", "precioMinimo": 400, "precioMaximo": 400, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 138, "producto": "DIA - ESTADIO PATRIA CANCHA AUXILIAR (D1) EQUIPOS EXTRANJEROS DE FUTBOL PROFESIONAL PARA ENTRENAMIENTO", "unidad": "PIEZA", "precioMinimo": 700, "precioMaximo": 700, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 139, "producto": "DIA - ESTADIO PATRIA CANCHA AUXILIAR (D1) PARTIDOS DE LA ASOCIACION DEPARTAMENTAL DE FUTBOL", "unidad": "PIEZA", "precioMinimo": 100, "precioMaximo": 100, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 140, "producto": "DIA - COLISEO TERCERA FASE DEL ESTADIO PATRIA (D1) PERSONAS PARTICULARES", "unidad": "PIEZA", "precioMinimo": 40, "precioMaximo": 40, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 141, "producto": "DIA - COLISEO TERCERA FASE DEL ESTADIO PATRIA (D1) CLUBES DE ASOCIACIONES", "unidad": "PIEZA", "precioMinimo": 20, "precioMaximo": 20, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 142, "producto": "DIA - ESTADIO PATRIA CANCHA DE CESPED SINTETICO (D1)  PERSONAS PARTICULARES", "unidad": "PIEZA", "precioMinimo": 30, "precioMaximo": 30, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 143, "producto": "DIA - ESTADIO PATRIA CANCHA DE CESPED SINTETICO (D1)  ESCUELAS DE FUTBOL", "unidad": "PIEZA", "precioMinimo": 20, "precioMaximo": 20, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 144, "producto": "DIA - ESTADIO PATRIA CANCHA DE CESPED SINTETICO (D1)  CLUBES DE ASOCIACIONES", "unidad": "PIEZA", "precioMinimo": 10, "precioMaximo": 10, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 145, "producto": "DIA - COLISEO JORGE REVILLA ALDANA (OVALO CENTRAL) D1 PERSONAS PARTICULARES", "unidad": "PIEZA", "precioMinimo": 40, "precioMaximo": 40, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 146, "producto": "DIA - COLISEO JORGE REVILLA ALDANA (OVALO CENTRAL) D1 CLUBES DE ASOCIACIONES", "unidad": "PIEZA", "precioMinimo": 20, "precioMaximo": 20, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 147, "producto": "DIA - CANCHAS AUXILIARES DEL JORGE REVILLA ALDANA D1 PERSONAS PARTICULARES", "unidad": "PIEZA", "precioMinimo": 10, "precioMaximo": 10, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 148, "producto": "DIA - CANCHAS AUXILIARES DEL JORGE REVILLA ALDANA D1 CLUBES DE ASOCIACIONES", "unidad": "PIEZA", "precioMinimo": 5, "precioMaximo": 5, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 149, "producto": "DIA - FRONTONES DEL ESTADIO PATRIA CANCHAS A,B, Y C (D1) PERSONAS PARTICULARES", "unidad": "PIEZA", "precioMinimo": 10, "precioMaximo": 10, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 150, "producto": "DIA - FRONTONES DEL ESTADIO PATRIA CANCHAS A,B, Y C (D1) CLUBES DE ASOCIACIONES", "unidad": "PIEZA", "precioMinimo": 15, "precioMaximo": 15, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 151, "producto": "DIA - COMPLEJO TENNIS D2 PERSONAS PARTICULARES", "unidad": "PIEZA", "precioMinimo": 30, "precioMaximo": 30, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 152, "producto": "DIA - COMPLEJO TENNIS D2 ESCUELA DE TENNIS", "unidad": "PIEZA", "precioMinimo": 22, "precioMaximo": 22, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 153, "producto": "DIA - COMPLEJO TENNIS D2 CLUBES DE ASOCIACIONES", "unidad": "PIEZA", "precioMinimo": 15, "precioMaximo": 15, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 154, "producto": "DIA - COLISEO EVO MORALES I( ALTO SUCRE) D5 PERSONAS PARTICULARES", "unidad": "PIEZA", "precioMinimo": 20, "precioMaximo": 20, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 155, "producto": "DIA - COLISEO EVO MORALES I( ALTO SUCRE) D5 CLUBES DE ASOCIACIONES", "unidad": "PIEZA", "precioMinimo": 10, "precioMaximo": 10, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 156, "producto": "DIA - COLISEO EVO MORALES II (ZONA COBOLDE) D2, COLISEO EVO MORALES III (RUMI RUMI) D4 Y ESTEBAN URQUIZU (ZONA AZARI)D 5 PERSONAS PARTICULARES", "unidad": "PIEZA", "precioMinimo": 20, "precioMaximo": 20, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 157, "producto": "DIA - COLISEO EVO MORALES II (ZONA COBOLDE) D2, COLISEO EVO MORALES III (RUMI RUMI) D4 Y ESTEBAN URQUIZU (ZONA AZARI)D 5 CLUBES DE ASOCIACIONES", "unidad": "PIEZA", "precioMinimo": 10, "precioMaximo": 10, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 158, "producto": "NOCHE - COLISEO TERCERA FASE DEL ESTADIO PATRIA (D1) PERSONAS PARTICULARES", "unidad": "PIEZA", "precioMinimo": 80, "precioMaximo": 80, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 159, "producto": "NOCHE - COLISEO TERCERA FASE DEL ESTADIO PATRIA (D1) CLUBES DE ASOCIACIONES", "unidad": "PIEZA", "precioMinimo": 80, "precioMaximo": 80, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 160, "producto": "NOCHE - ESTADIO PATRIA CANCHA DE CESPED SINTETICO (D1)  PERSONAS PARTICULARES", "unidad": "PIEZA", "precioMinimo": 150, "precioMaximo": 150, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 161, "producto": "NOCHE - ESTADIO PATRIA CANCHA DE CESPED SINTETICO (D1)  ESCUELAS DE FUTBOL", "unidad": "PIEZA", "precioMinimo": 150, "precioMaximo": 150, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 162, "producto": "NOCHE - ESTADIO PATRIA CANCHA DE CESPED SINTETICO (D1)  CLUBES DE ASOCIACIONES", "unidad": "PIEZA", "precioMinimo": 150, "precioMaximo": 150, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 163, "producto": "NOCHE - COLISEO JORGE REVILLA ALDANA (OVALO CENTRAL) D1 PERSONAS PARTICULARES", "unidad": "PIEZA", "precioMinimo": 80, "precioMaximo": 80, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 164, "producto": "NOCHE - COLISEO JORGE REVILLA ALDANA (OVALO CENTRAL) D1 CLUBES DE ASOCIACIONES", "unidad": "PIEZA", "precioMinimo": 80, "precioMaximo": 80, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 165, "producto": "NOCHE - CANCHAS AUXILIARES DEL JORGE REVILLA ALDANA D1 PERSONAS PARTICULARES", "unidad": "PIEZA", "precioMinimo": 20, "precioMaximo": 20, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 166, "producto": "NOCHE - CANCHAS AUXILIARES DEL JORGE REVILLA ALDANA D1 CLUBES DE ASOCIACIONES", "unidad": "PIEZA", "precioMinimo": 20, "precioMaximo": 20, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 167, "producto": "NOCHE - FRONTONES DEL ESTADIO PATRIA CANCHAS A,B, Y C (D1) PERSONAS PARTICULARES", "unidad": "PIEZA", "precioMinimo": 30, "precioMaximo": 30, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 168, "producto": "NOCHE - FRONTONES DEL ESTADIO PATRIA CANCHAS A,B, Y C (D1) CLUBES DE ASOCIACIONES", "unidad": "PIEZA", "precioMinimo": 35, "precioMaximo": 35, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 169, "producto": "NOCHE - COMPLEJO TENNIS D2 PERSONAS PARTICULARES", "unidad": "PIEZA", "precioMinimo": 80, "precioMaximo": 80, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 170, "producto": "NOCHE - COMPLEJO TENNIS D2 ESCUELA DE TENNIS", "unidad": "PIEZA", "precioMinimo": 80, "precioMaximo": 80, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 171, "producto": "NOCHE - COMPLEJO TENNIS D2 CLUBES DE ASOCIACIONES", "unidad": "PIEZA", "precioMinimo": 80, "precioMaximo": 80, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 172, "producto": "NOCHE - COLISEO EVO MORALES I( ALTO SUCRE) D5 PERSONAS PARTICULARES", "unidad": "PIEZA", "precioMinimo": 40, "precioMaximo": 40, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 173, "producto": "NOCHE - COLISEO EVO MORALES I( ALTO SUCRE) D5 CLUBES DE ASOCIACIONES", "unidad": "PIEZA", "precioMinimo": 40, "precioMaximo": 40, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 174, "producto": "NOCHE - COLISEO EVO MORALES II (ZONA COBOLDE) D2, COLISEO EVO MORALES III (RUMI RUMI) D4 Y ESTEBAN URQUIZU (ZONA AZARI)D 5 PERSONAS PARTICULARES", "unidad": "PIEZA", "precioMinimo": 45, "precioMaximo": 45, "sucursalId": 5, "puntoVentaId": 10}, 
+    {"id": 175, "producto": "NOCHE - COLISEO EVO MORALES II (ZONA COBOLDE) D2, COLISEO EVO MORALES III (RUMI RUMI) D4 Y ESTEBAN URQUIZU (ZONA AZARI)D 5 CLUBES DE ASOCIACIONES", "unidad": "PIEZA", "precioMinimo": 25, "precioMaximo": 25, "sucursalId": 5, "puntoVentaId": 10}
+  ],
+  "detalleVentas": [
+    {
+      "id": 1,
+      "producto": "REPOSICION FORMULARIO 101",
+      "unidad": "UNIDAD",
+      "precioUnitario": 12.5,
+      "sucursalId": 1,
+      "puntoVentaId": 1,
+      "ventaId": 1
+    },
+    {
+      "producto": "HORTALIZAS ( ARVEJAS)",
+      "unidad": "ARROBA",
+      "precioUnitario": 30,
+      "cantidad": "12",
+      "sucursalId": 1,
+      "puntoVentaId": 1,
+      "ventaId": 2,
+      "id": 2
+    },
+    {
+      "producto": "HORTALIZAS ( ARVEJAS)",
+      "unidad": "ARROBA",
+      "precioUnitario": 30.8,
+      "cantidad": "3",
+      "sucursalId": 1,
+      "puntoVentaId": 1,
+      "ventaId": 3,
+      "id": 3
+    },
+    {
+      "producto": "HORTALIZAS ( BROCOLI)",
+      "unidad": "CABEZAS",
+      "precioUnitario": 0.4,
+      "cantidad": "2",
+      "sucursalId": 1,
+      "puntoVentaId": 1,
+      "ventaId": 4,
+      "id": 4
+    },
+    {
+      "producto": "HORTALIZAS ( ZANAHORIA)",
+      "unidad": "QUINTALES",
+      "precioUnitario": 89.56,
+      "cantidad": "3",
+      "sucursalId": 1,
+      "puntoVentaId": 1,
+      "ventaId": 4,
+      "id": 5
+    },
+    {
+      "producto": "HORTALIZAS ( ARVEJAS)",
+      "unidad": "ARROBA",
+      "precioUnitario": 25.5,
+      "cantidad": "2",
+      "sucursalId": 1,
+      "puntoVentaId": 1,
+      "ventaId": 5,
+      "id": 6
+    },
+    {
+      "producto": "HORTALIZAS ( ARVEJAS)",
+      "unidad": "ARROBA",
+      "precioUnitario": 30,
+      "cantidad": "1",
+      "sucursalId": 1,
+      "puntoVentaId": 1,
+      "ventaId": 6,
+      "id": 7
+    },
+    {
+      "producto": "TORO DE 3 AÑOS (TORETE DE 2 a 3 AÑOS)",
+      "unidad": "CABEZA",
+      "precioUnitario": 6500,
+      "cantidad": "3",
+      "sucursalId": 1,
+      "puntoVentaId": 1,
+      "ventaId": 6,
+      "id": 8
+    },
+    {
+      "producto": "HORTALIZAS ( ARVEJAS)",
+      "unidad": "ARROBA",
+      "precioUnitario": 30,
+      "cantidad": "1",
+      "sucursalId": 1,
+      "puntoVentaId": 1,
+      "ventaId": 7,
+      "id": 9
+    },
+    {
+      "producto": "LECHE DE VACA (LECHE DE VACA PURA)",
+      "unidad": "LITROS",
+      "precioUnitario": 3.85,
+      "cantidad": "2",
+      "sucursalId": 1,
+      "puntoVentaId": 1,
+      "ventaId": 7,
+      "id": 10
+    },
+    {
+      "producto": "HORTALIZAS ( ARVEJAS)",
+      "unidad": "ARROBA",
+      "precioUnitario": 30,
+      "cantidad": "2",
+      "sucursalId": 1,
+      "puntoVentaId": 1,
+      "ventaId": 8,
+      "id": 11
+    },
+    {
+      "producto": "HORTALIZAS ( BROCOLI)",
+      "unidad": "CABEZAS",
+      "precioUnitario": 0.45,
+      "cantidad": "2",
+      "sucursalId": 1,
+      "puntoVentaId": 1,
+      "ventaId": 8,
+      "id": 12
+    },
+    {
+      "producto": "VENTA DE LICOR DE NARANJA Y MANDARINA",
+      "unidad": "LITROS",
+      "precioUnitario": 22.56,
+      "cantidad": "2",
+      "sucursalId": 1,
+      "puntoVentaId": 1,
+      "ventaId": 8,
+      "id": 13
+    },
+    {
+      "producto": "HORTALIZAS ( ARVEJAS)",
+      "unidad": "ARROBA",
+      "precioUnitario": 30,
+      "cantidad": "2",
+      "sucursalId": 1,
+      "puntoVentaId": 1,
+      "ventaId": 9,
+      "id": 14
+    },
+    {
+      "producto": "HORTALIZAS ( ARVEJAS)",
+      "unidad": "ARROBA",
+      "precioUnitario": 12,
+      "cantidad": "45",
+      "sucursalId": 1,
+      "puntoVentaId": 1,
+      "ventaId": 10,
+      "id": 15
+    },
+    {
+      "producto": "HORTALIZAS (LECHUGAS)",
+      "unidad": "CABEZAS",
+      "precioUnitario": 0.56,
+      "cantidad": "56",
+      "sucursalId": 1,
+      "puntoVentaId": 1,
+      "ventaId": 10,
+      "id": 16
+    },
+    {
+      "producto": "HORTALIZAS ( ARVEJAS)",
+      "unidad": "ARROBA",
+      "precioUnitario": 30,
+      "cantidad": "2",
+      "sucursalId": 1,
+      "puntoVentaId": 1,
+      "ventaId": 11,
+      "id": 17
+    },
+    {
+      "producto": "LECHE DE VACA (LECHE DE VACA PURA)",
+      "unidad": "LITROS",
+      "precioUnitario": 4.89,
+      "cantidad": "2",
+      "sucursalId": 1,
+      "puntoVentaId": 1,
+      "ventaId": 11,
+      "id": 18
+    },
+    {
+      "producto": "HORTALIZAS ( ARVEJAS)",
+      "unidad": "ARROBA",
+      "precioUnitario": 30,
+      "cantidad": "2",
+      "sucursalId": 1,
+      "puntoVentaId": 1,
+      "ventaId": 12,
+      "id": 19
     }
   ]
 }

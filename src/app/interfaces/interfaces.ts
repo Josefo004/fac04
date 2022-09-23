@@ -64,12 +64,13 @@ export interface TRazonSocial {
 }
 
 export interface TProducto {
-  id:             number;
-  producto:       string;
-  unidad:         string;
-  precioUnitario: number;
-  sucursalId:     number;
-  puntoVentaId:   number;
+  id:           number;
+  producto:     string;
+  unidad:       string;
+  precioMinimo: number;
+  precioMaximo: number;
+  sucursalId:   number;
+  puntoVentaId: number;
 }
 
 export interface TProductoV {
